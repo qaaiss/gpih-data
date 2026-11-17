@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "generated_at": "2026-11-17T06:30:00+04:00",
+    "generator": "scheduled market run",
+    "model": "claude-sonnet-5-5",
+    "notes": "Initial payload."
+  },
+  "prices": [
+    {
+      "material": "tio2",
+      "market": "China · rutile, sulphate",
+      "price_low": null,
+      "price_high": null,
+      "price_avg": 13650,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": "EXW",
+      "observed_on": "2026-09-30",
+      "confidence": "verified",
+      "source": "SMM",
+      "source_url": "https://news.metal.com/newscontent/104142695-september-peak-season-falls-short-of-expectations-titanium-industry-chain-runs-weak-with-divergence-smm-analysis",
+      "source_title": "September Peak Season Falls Short of Expectations"
+    }
+  ],
+  "drivers": [],
+  "fx": [],
+  "events": [
+    {
+      "material": "tio2",
+      "event_type": "capacity",
+      "title": "Returning Western capacity may cap 2027 price increases",
+      "summary": "TiPMC: demand +3.2% in 2027, but Venator restarts, Chinese expansion and weak housing limit pricing power.",
+      "company": "TiPMC Consulting",
+      "direction": "down",
+      "impact": "high",
+      "event_date": "2026-11-13",
+      "source": "PCI Magazine",
+      "source_url": "https://www.pcimag.com/articles/115502-tio-recovery-faces-new-pressure-as-global-capacity-returns",
+      "is_alert": true
+    }
+  ],
+  "analyses": [
+    {
+      "material": "tio2",
+      "summary": "Chinese sulphate-process rutile has fallen back from its April peak as inventories stayed high and domestic demand weak. Western producers pushed several rounds of increases in 2026, but returning European capacity and Chinese chloride expansion are likely to cap further gains in 2027.",
+      "drivers": [
+        {
+          "name": "Producer price announcements",
+          "note": "Chemours, Kronos, Tronox, LB Group letters",
+          "influence": "high"
+        },
+        {
+          "name": "Chinese producer inventories",
+          "note": "High stocks capped H2 2026 prices",
+          "influence": "high"
+        },
+        {
+          "name": "Global capacity changes",
+          "note": "Venator restarts (~310 kt/y), Chinese chloride expansion",
+          "influence": "high"
+        },
+        {
+          "name": "Anti-dumping duties",
+          "note": "EU, UK, India, Saudi Arabia on Chinese TiO2",
+          "influence": "medium"
+        },
+        {
+          "name": "Feedstock & sulphuric acid cost",
+          "note": "Sets the floor for sulphate-process producers",
+          "influence": "medium"
+        },
+        {
+          "name": "Housing & construction demand",
+          "note": "Weak in North America and Western Europe",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Avoid large forward stockpiling; Chinese market is oversupplied."
+        },
+        {
+          "department": "Procurement",
+          "action": "Push back on full January price-increase letters from suppliers."
+        },
+        {
+          "department": "Procurement",
+          "action": "Watch Q1 2027 producer price-increase letters for implementation signals."
+        }
+      ],
+      "evidence": [
+        "https://news.metal.com/newscontent/104142695-september-peak-season-falls-short-of-expectations-titanium-industry-chain-runs-weak-with-divergence-smm-analysis",
+        "https://www.pcimag.com/articles/115502-tio-recovery-faces-new-pressure-as-global-capacity-returns",
+        "https://www.sunsirs.com/uk/detail_news-35171.html"
+      ]
+    }
+  ],
+  "forecasts": [
+    {
+      "material": "tio2",
+      "market": "China · rutile, sulphate",
+      "horizon_label": "Dec 2026 – Feb 2027",
+      "target_date": "2027-02-28",
+      "low": 13240,
+      "base": 13450,
+      "high": 14060,
+      "currency": "CNY",
+      "confidence": "medium",
+      "method": "event_adjusted",
+      "rationale": "Stable to slightly softer (±3% around 13,650): high Chinese inventories; January hike letters likely only partly implemented."
+    },
+    {
+      "material": "tio2",
+      "market": "China · rutile, sulphate",
+      "horizon_label": "Q2 2027",
+      "target_date": "2027-06-30",
+      "low": 13650,
+      "base": 14200,
+      "high": 14470,
+      "currency": "CNY",
+      "confidence": "low-medium",
+      "method": "event_adjusted",
+      "rationale": "Modest +3% to +6% on seasonal coatings demand and TiPMC's expected 2027 demand recovery."
+    },
+    {
+      "material": "tio2",
+      "market": "China · rutile, sulphate",
+      "horizon_label": "H2 2027",
+      "target_date": "2027-12-31",
+      "low": 12500,
+      "base": 13200,
+      "high": 13900,
+      "currency": "CNY",
+      "confidence": "low",
+      "method": "event_adjusted",
+      "rationale": "Downward pressure as former Venator capacity returns and Chinese chloride capacity expands."
+    }
+  ]
+}
