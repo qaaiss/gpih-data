@@ -1,428 +1,111 @@
 {
   "schema_version": "1.0",
   "run": {
-    "generated_at": "2026-11-17T23:59:00+04:00",
+    "generated_at": "2026-11-18T00:15:00+04:00",
     "generator": "scheduled market run",
     "model": "claude-opus-5-5",
-    "notes": "Prices for TiO2 (sulphate, chloride), AA, BA, styrene from China sources; no public price for 2-EHA, VAM, xylene, white spirit; PALM_OIL not found; no forecasts (Tuesday)."
+    "notes": "Manual run just after midnight Dubai: no new price/driver figures published since previous payload (17 Nov Brent settlement and China closes not yet available); 3 new events; forecasts not produced (not Monday)."
   },
-  "prices": [
-    {
-      "material": "tio2",
-      "market": "China · rutile, sulphate",
-      "price_low": 11800,
-      "price_high": 15200,
-      "price_avg": 13351,
-      "currency": "CNY",
-      "unit": "t",
-      "incl_vat": true,
-      "incoterm": "EXW",
-      "observed_on": "2026-11-17",
-      "confidence": "verified",
-      "source": "Mysteel",
-      "source_url": "https://list1.m.mysteel.com/zhishi/2026ntbfjgylb.html",
-      "source_title": "2026年钛白粉价格一览表 (rutile industry average)"
-    },
-    {
-      "material": "tio2",
-      "market": "China · chloride process",
-      "price_low": 14000,
-      "price_high": 16800,
-      "price_avg": 15400,
-      "currency": "CNY",
-      "unit": "t",
-      "incl_vat": true,
-      "incoterm": "EXW",
-      "observed_on": "2026-11-13",
-      "confidence": "verified",
-      "source": "SMM",
-      "source_url": "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review",
-      "source_title": "Titanium Supply-Demand Under Pressure Across the Entire Chain, Prices Consolidate at Lows [SMM Titanium Weekly Review]"
-    },
-    {
-      "material": "acrylic-acid",
-      "market": "China · East China",
-      "price_low": null,
-      "price_high": null,
-      "price_avg": 9650,
-      "currency": "CNY",
-      "unit": "t",
-      "incl_vat": true,
-      "incoterm": "EXW",
-      "observed_on": "2026-11-13",
-      "confidence": "verified",
-      "source": "Mysteel",
-      "source_url": "https://m.mysteel.com/hot/1592860.html",
-      "source_title": "丙烯酸及酯 今日价格 (East China producer quote)"
-    },
-    {
-      "material": "butyl-acrylate",
-      "market": "China · East China",
-      "price_low": null,
-      "price_high": null,
-      "price_avg": 10950,
-      "currency": "CNY",
-      "unit": "t",
-      "incl_vat": true,
-      "incoterm": "EXW",
-      "observed_on": "2026-11-13",
-      "confidence": "verified",
-      "source": "Mysteel",
-      "source_url": "https://m.mysteel.com/hot/1592860.html",
-      "source_title": "丙烯酸及酯 今日价格 (East China producer quote)"
-    },
-    {
-      "material": "styrene",
-      "market": "China · East China spot",
-      "price_low": null,
-      "price_high": null,
-      "price_avg": 9600,
-      "currency": "CNY",
-      "unit": "t",
-      "incl_vat": true,
-      "incoterm": "EXW",
-      "observed_on": "2026-11-16",
-      "confidence": "verified",
-      "source": "ChemicalBook",
-      "source_url": "https://www.chemicalbook.com/priceindex_cb3415111.htm",
-      "source_title": "苯乙烯价格行情 (Jiangsu, premium grade)"
-    }
-  ],
-  "drivers": [
-    {
-      "code": "DCE_EB",
-      "contract": "main contract, settlement",
-      "value": 9208,
-      "observed_on": "2026-11-16",
-      "source": "Sina Finance",
-      "source_url": "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html"
-    },
-    {
-      "code": "DCE_BZ",
-      "contract": "main contract, settlement",
-      "value": 7826,
-      "observed_on": "2026-11-16",
-      "source": "Sina Finance",
-      "source_url": "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html"
-    },
-    {
-      "code": "ZCE_PL",
-      "contract": "main contract, settlement",
-      "value": 9096,
-      "observed_on": "2026-11-16",
-      "source": "Sina Finance",
-      "source_url": "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html"
-    },
-    {
-      "code": "ZCE_PX",
-      "contract": "main contract, settlement",
-      "value": 8548,
-      "observed_on": "2026-11-16",
-      "source": "Sina Finance",
-      "source_url": "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html"
-    },
-    {
-      "code": "ZCE_MA",
-      "contract": "main contract, settlement",
-      "value": 3244,
-      "observed_on": "2026-11-16",
-      "source": "Sina Finance",
-      "source_url": "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html"
-    },
-    {
-      "code": "BRENT",
-      "contract": "front month, settlement (USD/bbl)",
-      "value": 92.44,
-      "observed_on": "2026-11-16",
-      "source": "Nation Thailand (Reuters)",
-      "source_url": "https://www.nationthailand.com/news/world/40073582"
-    },
-    {
-      "code": "NBUTANOL",
-      "contract": "Shandong spot (CNY/t)",
-      "value": 7850,
-      "observed_on": "2026-11-13",
-      "source": "Mysteel",
-      "source_url": "https://m.mysteel.com/hot/1593011.html"
-    },
-    {
-      "code": "TI_CONC",
-      "contract": "Domestic TiO2>=46% concentrate (CNY/t)",
-      "value": 1075,
-      "observed_on": "2026-11-13",
-      "source": "SMM",
-      "source_url": "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review"
-    }
-  ],
-  "fx": [
-    {
-      "pair": "USDCNY",
-      "rate": 6.7132,
-      "observed_on": "2026-11-17",
-      "source_url": "https://www.newsquawk.com/headlines/pboc-sets-usdcny-midpoint-at-67132-vs-exp-66715-prev-67141"
-    }
-  ],
+  "prices": [],
+  "drivers": [],
+  "fx": [],
   "events": [
     {
       "material": null,
       "event_type": "geopolitics",
-      "title": "Brent falls 3.6% to $92.44 as Hormuz exports recover",
-      "summary": "Brent settled at $92.44/bbl on 16 Nov as Middle East exports through the Strait of Hormuz recovered and the IEA now sees a 1.7 mb/d Q4 surplus; Iran's IRGC claimed tankers struck mines in the Strait (unverified), so supply risk remains.",
+      "title": "Tanker near Hormuz struck a second time; Iran claims three ships hit mines",
+      "summary": "UKMTO said a tanker hit on 16 Nov north of Khasab was struck again on 17 Nov with crew unaccounted for, and Iran claimed three ships hit mines near Hormuz; Brent traded around $92.9 early on 17 Nov.",
       "company": null,
-      "direction": "down",
+      "direction": "up",
       "impact": "high",
-      "event_date": "2026-11-16",
-      "source": "Nation Thailand (Reuters)",
-      "source_url": "https://www.nationthailand.com/news/world/40073582",
+      "event_date": "2026-11-17",
+      "source": "Transport Topics",
+      "source_url": "https://www.ttnews.com/articles/oil-prices-vessel-attacks",
       "is_alert": true
     },
     {
       "material": null,
-      "event_type": "geopolitics",
-      "title": "Hormuz flows estimated at roughly half of pre-war levels",
-      "summary": "Kpler preliminary data put oil and product flows at ~8.3 mb/d in the week to 11 Nov vs 17.1 mb/d pre-war (~48%); longer routes and insurance keep delivered costs elevated.",
+      "event_type": "demand",
+      "title": "China petrochemical futures fall 2-6% on 17 Nov",
+      "summary": "Chinese crude futures fell over 6%; benzene over 4%; propylene, styrene and methanol over 3%; PX and palm oil over 2% on 17 Nov.",
       "company": null,
-      "direction": "mixed",
+      "direction": "down",
       "impact": "medium",
-      "event_date": "2026-11-11",
-      "source": "Discovery Alert",
-      "source_url": "https://discoveryalert.com/analysis/oil-prices-hormuz-flows-surplus-november-2026/",
+      "event_date": "2026-11-17",
+      "source": "Sohu (CNR)",
+      "source_url": "https://www.sohu.com/a/1102721801_362042",
       "is_alert": false
     },
     {
       "material": null,
-      "event_type": "trade_duty",
-      "title": "EU imposes provisional anti-dumping duties on acrylic esters",
-      "summary": "Commission Implementing Regulation (EU) 2026/2512 of 10 Nov imposes provisional duties on certain acrylic esters (TARIC 2916 12 00) from China, Saudi Arabia, South Africa and the USA; rates not stated in source. Diverted export volumes could weigh on Asian/Middle East acrylate prices.",
-      "company": "European Commission",
-      "direction": "mixed",
-      "impact": "medium",
-      "event_date": "2026-11-10",
-      "source": "Taxxa",
-      "source_url": "https://taxxa.ai/news/2026/11/12/eu-imposes-provisional-duties-on-acrylic-esters-from-four-countries",
-      "is_alert": false
-    },
-    {
-      "material": "acrylic-acid",
-      "event_type": "price_announcement",
-      "title": "Wanhua lowers East China acrylic acid quote by 300 yuan/t",
-      "summary": "PriceSeek headline reports Wanhua Chemical cut its East China acrylic acid offer by 300 yuan/t.",
-      "company": "Wanhua Chemical",
-      "direction": "down",
-      "impact": "low",
-      "event_date": "2026-11-13",
-      "source": "10jqka (PriceSeek)",
-      "source_url": "http://news.10jqka.com.cn/20261113/c681811605.shtml",
-      "is_alert": false
-    },
-    {
-      "material": "tio2",
-      "event_type": "trade_duty",
-      "title": "Eurasian Economic Union suspends anti-dumping duties on Chinese TiO2",
-      "summary": "SMM reports the EAEU suspension gives Chinese TiO2 exports a short-term boost, while EU, India and Brazil duties remain; Chinese plant inventories rose as the off-season set in.",
-      "company": null,
-      "direction": "mixed",
-      "impact": "medium",
-      "event_date": "2026-11-13",
-      "source": "SMM",
-      "source_url": "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review",
-      "is_alert": false
-    },
-    {
-      "material": "styrene",
       "event_type": "other",
-      "title": "China styrene run rates rise to 64% as margins recover",
-      "summary": "Guangfa Futures: styrene operating rate rose 2.22 pts to 64.03% in the week to 13 Nov; Jiangsu port benzene stocks fell to 19 kt, but analysts expect inventories to rebuild.",
-      "company": null,
+      "title": "Goldman sees Brent averaging $88 in 2027 on returning surplus",
+      "summary": "Goldman Sachs expects Brent to average $88/bbl in 2027 and fall to $78 by December 2027 as the market returns to surplus (as reported).",
+      "company": "Goldman Sachs",
       "direction": "down",
-      "impact": "low",
-      "event_date": "2026-11-13",
-      "source": "Sohu (Guangfa Futures)",
-      "source_url": "https://www.sohu.com/a/1102564573_122014422",
+      "impact": "medium",
+      "event_date": "2026-11-17",
+      "source": "FinanceFeeds",
+      "source_url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/",
       "is_alert": false
     }
   ],
   "analyses": [
     {
       "material": "tio2",
-      "summary": "AI interpretation: Chinese sulphate-process rutile continues to drift lower (Mysteel industry average 13,351 CNY/t on 17 Nov, down 89 on the day) as plant inventories build in the off-season. Feedstock concentrate is flat near 1,075 CNY/t, so cost support is weak. The EAEU duty suspension helps Chinese exports only marginally, and returning Western capacity limits upside into 2027.",
+      "summary": "AI interpretation: No new TiO2 price was published since the 17 Nov Mysteel reading (sulphate rutile average 13,351 CNY/t, falling). Off-season inventory build in China and flat concentrate costs keep the bias soft. Weaker crude and energy prices do not change the TiO2 picture materially in the short term.",
       "drivers": [
         {
           "name": "Chinese plant inventories",
-          "note": "Rising during off-season with high operating rates",
+          "note": "Building in off-season",
           "influence": "high"
         },
         {
-          "name": "Titanium concentrate cost",
-          "note": "Flat at ~1,075 CNY/t; ample port stocks",
-          "influence": "medium"
-        },
-        {
-          "name": "Trade duties",
-          "note": "EAEU suspension vs EU/India/Brazil duties",
-          "influence": "medium"
-        },
-        {
-          "name": "Global capacity returns",
-          "note": "Western restarts cap 2027 pricing",
+          "name": "Concentrate cost",
+          "note": "Flat; ample port stocks",
           "influence": "medium"
         }
       ],
       "actions": [
         {
           "department": "Procurement",
-          "action": "Buy hand-to-mouth for December; Chinese rutile has downside room."
-        },
-        {
-          "department": "Procurement",
-          "action": "Use the weak Chinese market to negotiate Q1 contract levels below current offers."
-        },
-        {
-          "department": "Finance",
-          "action": "Budget Q1 TiO2 flat to slightly lower versus November."
+          "action": "Continue hand-to-mouth buying; no need to cover beyond December."
         }
       ],
       "evidence": [
         "https://list1.m.mysteel.com/zhishi/2026ntbfjgylb.html",
-        "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review",
-        "https://news.metal.com/newscontent/104209690-off-season-suppresses-demand-titanium-market-consolidates-at-lows-with-little-chance-of-rising-in-the-short-term-smm-titanium-weekly-review",
-        "https://www.pcimag.com/articles/115502-tio-recovery-faces-new-pressure-as-global-capacity-returns"
+        "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review"
       ]
     },
     {
       "material": "styrene",
-      "summary": "AI interpretation: East China styrene spot is around 9,600 CNY/t and DCE styrene futures settled at 9,208 on 16 Nov after a choppy week. Crude weakness (Brent -3.6% on Hormuz recovery) and rising Chinese styrene run rates point to softer prices, though low benzene port stocks give some floor.",
+      "summary": "AI interpretation: Chinese styrene, benzene and propylene futures fell more than 3% on 17 Nov, following crude lower on surplus expectations, even as tanker attacks near Hormuz continued. The East China spot reference of ~9,600 CNY/t (16 Nov) is likely to ease further unless Gulf disruption escalates.",
       "drivers": [
         {
-          "name": "Crude oil / Hormuz",
-          "note": "Brent $92.44; export recovery adds supply",
+          "name": "Crude oil",
+          "note": "Surplus outlook vs Hormuz attacks",
           "influence": "high"
         },
         {
-          "name": "Benzene feedstock",
-          "note": "DCE benzene 7,826; Jiangsu port stocks 19 kt",
-          "influence": "medium"
-        },
-        {
-          "name": "Styrene run rates",
-          "note": "64% and rising as margins recover",
+          "name": "Chinese futures sentiment",
+          "note": "Broad petrochemical sell-off on 17 Nov",
           "influence": "medium"
         }
       ],
       "actions": [
         {
           "department": "Procurement",
-          "action": "Defer non-urgent styrene purchases; bias is lower with crude."
+          "action": "Hold off on forward styrene cover; reassess if Hormuz attacks escalate."
         },
         {
           "department": "Finance",
-          "action": "Watch Brent and Hormuz headlines for sudden reversals."
+          "action": "Flag two-sided crude risk in Q1 cost budgets."
         }
       ],
       "evidence": [
-        "https://www.chemicalbook.com/priceindex_cb3415111.htm",
-        "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html",
-        "https://www.nationthailand.com/news/world/40073582",
-        "https://www.sohu.com/a/1102564573_122014422"
-      ]
-    },
-    {
-      "material": "butyl-acrylate",
-      "summary": "AI interpretation: East China producer quotes for butyl acrylate held at 10,950 CNY/t on 12-13 Nov while n-butanol fell about 7.6% in the week to 12 Nov, widening the BA margin. The EU provisional duties on acrylic esters may divert Chinese, Saudi and US volumes to Asia and the Middle East, adding downward pressure.",
-      "drivers": [
-        {
-          "name": "n-butanol cost",
-          "note": "Shandong 7,850 CNY/t, weekly drop ~7%",
-          "influence": "high"
-        },
-        {
-          "name": "Acrylic acid cost",
-          "note": "Wanhua East China AA 9,650; reported 300 cut",
-          "influence": "high"
-        },
-        {
-          "name": "EU anti-dumping duties",
-          "note": "Possible export diversion to Asia/Middle East",
-          "influence": "medium"
-        }
-      ],
-      "actions": [
-        {
-          "department": "Procurement",
-          "action": "Push suppliers for BA discounts reflecting lower n-butanol and AA."
-        },
-        {
-          "department": "Procurement",
-          "action": "Check offers from Saudi suppliers that may lose EU outlets."
-        }
-      ],
-      "evidence": [
-        "https://m.mysteel.com/hot/1592860.html",
-        "https://m.mysteel.com/hot/1593011.html",
-        "https://taxxa.ai/news/2026/11/12/eu-imposes-provisional-duties-on-acrylic-esters-from-four-countries",
-        "http://news.10jqka.com.cn/20261113/c681811605.shtml"
-      ]
-    },
-    {
-      "material": "acrylic-acid",
-      "summary": "AI interpretation: Wanhua's East China acrylic acid quote stood at 9,650 CNY/t on 13 Nov, with a reported 300 yuan/t cut, while ZCE propylene futures settled at 9,096. Softer propylene and crude point to further easing in acrylic acid.",
-      "drivers": [
-        {
-          "name": "Propylene feedstock",
-          "note": "ZCE propylene 9,096 settlement on 16 Nov",
-          "influence": "high"
-        },
-        {
-          "name": "Producer pricing",
-          "note": "Wanhua quote cut 300 CNY/t",
-          "influence": "medium"
-        }
-      ],
-      "actions": [
-        {
-          "department": "Procurement",
-          "action": "Expect lower AA-linked monomer offers; avoid forward cover."
-        }
-      ],
-      "evidence": [
-        "https://m.mysteel.com/hot/1592860.html",
-        "http://news.10jqka.com.cn/20261113/c681811605.shtml",
-        "https://k.sina.cn/article_5953189932_162d6782c067054dr8.html"
-      ]
-    },
-    {
-      "material": "acrylic-emulsions",
-      "summary": "AI interpretation: No direct emulsion price was found. Main monomer costs are easing: n-butanol is down sharply, acrylic acid quotes were cut, and styrene and crude are weaker, so emulsion suppliers have little case for increases and buyers can seek reductions.",
-      "drivers": [
-        {
-          "name": "Butyl acrylate",
-          "note": "East China 10,950; feedstocks falling",
-          "influence": "high"
-        },
-        {
-          "name": "Styrene",
-          "note": "East China ~9,600; crude-linked weakness",
-          "influence": "high"
-        },
-        {
-          "name": "Crude oil",
-          "note": "Brent $92.44 on Hormuz recovery",
-          "influence": "medium"
-        }
-      ],
-      "actions": [
-        {
-          "department": "Procurement",
-          "action": "Ask emulsion suppliers for cost pass-through of lower monomer prices."
-        },
-        {
-          "department": "R&D",
-          "action": "Keep styrene-acrylic options qualified while styrene is weak."
-        }
-      ],
-      "evidence": [
-        "https://m.mysteel.com/hot/1592860.html",
-        "https://m.mysteel.com/hot/1593011.html",
+        "https://www.sohu.com/a/1102721801_362042",
+        "https://www.ttnews.com/articles/oil-prices-vessel-attacks",
+        "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/",
         "https://www.chemicalbook.com/priceindex_cb3415111.htm",
         "https://www.nationthailand.com/news/world/40073582"
       ]

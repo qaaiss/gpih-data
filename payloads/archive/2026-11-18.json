@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "run": {
+    "generated_at": "2026-11-18T00:15:00+04:00",
+    "generator": "scheduled market run",
+    "model": "claude-opus-5-5",
+    "notes": "Manual run just after midnight Dubai: no new price/driver figures published since previous payload (17 Nov Brent settlement and China closes not yet available); 3 new events; forecasts not produced (not Monday)."
+  },
+  "prices": [],
+  "drivers": [],
+  "fx": [],
+  "events": [
+    {
+      "material": null,
+      "event_type": "geopolitics",
+      "title": "Tanker near Hormuz struck a second time; Iran claims three ships hit mines",
+      "summary": "UKMTO said a tanker hit on 16 Nov north of Khasab was struck again on 17 Nov with crew unaccounted for, and Iran claimed three ships hit mines near Hormuz; Brent traded around $92.9 early on 17 Nov.",
+      "company": null,
+      "direction": "up",
+      "impact": "high",
+      "event_date": "2026-11-17",
+      "source": "Transport Topics",
+      "source_url": "https://www.ttnews.com/articles/oil-prices-vessel-attacks",
+      "is_alert": true
+    },
+    {
+      "material": null,
+      "event_type": "demand",
+      "title": "China petrochemical futures fall 2-6% on 17 Nov",
+      "summary": "Chinese crude futures fell over 6%; benzene over 4%; propylene, styrene and methanol over 3%; PX and palm oil over 2% on 17 Nov.",
+      "company": null,
+      "direction": "down",
+      "impact": "medium",
+      "event_date": "2026-11-17",
+      "source": "Sohu (CNR)",
+      "source_url": "https://www.sohu.com/a/1102721801_362042",
+      "is_alert": false
+    },
+    {
+      "material": null,
+      "event_type": "other",
+      "title": "Goldman sees Brent averaging $88 in 2027 on returning surplus",
+      "summary": "Goldman Sachs expects Brent to average $88/bbl in 2027 and fall to $78 by December 2027 as the market returns to surplus (as reported).",
+      "company": "Goldman Sachs",
+      "direction": "down",
+      "impact": "medium",
+      "event_date": "2026-11-17",
+      "source": "FinanceFeeds",
+      "source_url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/",
+      "is_alert": false
+    }
+  ],
+  "analyses": [
+    {
+      "material": "tio2",
+      "summary": "AI interpretation: No new TiO2 price was published since the 17 Nov Mysteel reading (sulphate rutile average 13,351 CNY/t, falling). Off-season inventory build in China and flat concentrate costs keep the bias soft. Weaker crude and energy prices do not change the TiO2 picture materially in the short term.",
+      "drivers": [
+        {
+          "name": "Chinese plant inventories",
+          "note": "Building in off-season",
+          "influence": "high"
+        },
+        {
+          "name": "Concentrate cost",
+          "note": "Flat; ample port stocks",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Continue hand-to-mouth buying; no need to cover beyond December."
+        }
+      ],
+      "evidence": [
+        "https://list1.m.mysteel.com/zhishi/2026ntbfjgylb.html",
+        "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review"
+      ]
+    },
+    {
+      "material": "styrene",
+      "summary": "AI interpretation: Chinese styrene, benzene and propylene futures fell more than 3% on 17 Nov, following crude lower on surplus expectations, even as tanker attacks near Hormuz continued. The East China spot reference of ~9,600 CNY/t (16 Nov) is likely to ease further unless Gulf disruption escalates.",
+      "drivers": [
+        {
+          "name": "Crude oil",
+          "note": "Surplus outlook vs Hormuz attacks",
+          "influence": "high"
+        },
+        {
+          "name": "Chinese futures sentiment",
+          "note": "Broad petrochemical sell-off on 17 Nov",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Hold off on forward styrene cover; reassess if Hormuz attacks escalate."
+        },
+        {
+          "department": "Finance",
+          "action": "Flag two-sided crude risk in Q1 cost budgets."
+        }
+      ],
+      "evidence": [
+        "https://www.sohu.com/a/1102721801_362042",
+        "https://www.ttnews.com/articles/oil-prices-vessel-attacks",
+        "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/",
+        "https://www.chemicalbook.com/priceindex_cb3415111.htm",
+        "https://www.nationthailand.com/news/world/40073582"
+      ]
+    }
+  ],
+  "forecasts": []
+}
