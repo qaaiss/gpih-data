@@ -4,7 +4,7 @@
   "generated_at": "2026-11-18T23:55:00+04:00",
   "generator": "scheduled market run",
   "model": "claude-opus-5-5",
-  "notes": "Late run 18 Nov, merged with earlier 18 Nov rows. New from GuideChem checklist: xylene East China 7,000 (18 Nov), styrene 9,810 (18 Nov), PA 9,800 (17 Nov), MMA 99.9% 9,500 (17 Nov itemized; headline 12,450 has no grade), HEMA 97% 14,300 (17 Nov), BPA 10,620 (18 Nov, domestic), ECH 11,000 (18 Nov), acetic acid 3,840 (17 Nov). All single-source, indicative. Still not found: HDI monomer and Mysteel curing-agent page (fetch permission withdrawn in unattended run), 2-EHA (GuideChem page not reachable), E-20, HDI biuret, S-100, Brent 18 Nov settlement, DCE EB/BZ and ZCE PL 18 Nov closes. Blocked earlier today: sunsirs, 100ppi, chemnet. No forecasts (Wednesday)."
+  "notes": "Late run 18 Nov, merged with earlier 18 Nov rows. New from GuideChem checklist: xylene East China 7,000 (18 Nov), styrene 9,810 (18 Nov), PA 9,800 (17 Nov), MMA 99.9% 9,500 (17 Nov itemized; headline 12,450 has no grade), HEMA 97% 14,300 (17 Nov), BPA 10,620 (18 Nov, domestic), ECH 11,000 (18 Nov), acetic acid 3,840 (17 Nov). All single-source, indicative. Still not found: HDI monomer and Mysteel curing-agent page (fetch permission withdrawn in unattended run), 2-EHA (GuideChem page not reachable), E-20, HDI biuret, S-100, Brent 18 Nov settlement, DCE EB/BZ and ZCE PL 18 Nov closes. Blocked earlier today: sunsirs, 100ppi, chemnet. No forecasts (Wednesday). Supplement: HDI 28,750 and butyl acetate 7,550 (Mysteel curing-agent page, 18 Nov) added after the run."
  },
  "prices": [
   {
@@ -220,6 +220,34 @@
    "source": "GuideChem GuideTrends",
    "source_url": "https://www.guidechem.com/price/en/64-19-7.html",
    "source_title": "Acetic acid, East China first-class"
+  },
+  {
+   "material": "hdi",
+   "market": "China",
+   "price_avg": 28750,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "Mysteel (Oilchem curing-agent channel)",
+   "source_url": "https://www.mysteel.com/oilchem/guhuaji/",
+   "source_title": "固化剂 daily price snapshot"
+  },
+  {
+   "material": "butyl-acetate",
+   "market": "China · East China",
+   "price_avg": 7550,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "Mysteel (Oilchem curing-agent channel)",
+   "source_url": "https://www.mysteel.com/oilchem/guhuaji/",
+   "source_title": "固化剂 daily price snapshot"
   }
  ],
  "drivers": [
