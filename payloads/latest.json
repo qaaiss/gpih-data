@@ -1,10 +1,10 @@
 {
  "schema_version": "1.0",
  "run": {
-  "generated_at": "2026-11-18T23:45:00+04:00",
+  "generated_at": "2026-11-18T23:55:00+04:00",
   "generator": "scheduled market run",
   "model": "claude-opus-5-5",
-  "notes": "Evening run 18 Nov (merged with earlier 18 Nov rows). New: TiO2 chloride (SMM 16 Nov), E-51 East China and butyl acetate (ChemicalBook 17 Nov), BA/AA (Wanhua East China 18 Nov), first-grade soybean oil (18 Nov), 200# solvent (single supplier offer); drivers ZCE_PX, ZCE_MA, Bursa palm oil (MYR), n-butanol. Not found: HDI, xylene East China assessment, styrene spot, MMA (sources conflict), PA, 2-EHA, HEMA, BPA, ECH, acetic acid East China, E-20, HDI biuret, S-100, DCE EB/BZ and ZCE PL closes, Brent 18 Nov settlement. Blocked: sunsirs, 100ppi, chemnet (security checks). No forecasts (Wednesday)."
+  "notes": "Late run 18 Nov, merged with earlier 18 Nov rows. New from GuideChem checklist: xylene East China 7,000 (18 Nov), styrene 9,810 (18 Nov), PA 9,800 (17 Nov), MMA 99.9% 9,500 (17 Nov itemized; headline 12,450 has no grade), HEMA 97% 14,300 (17 Nov), BPA 10,620 (18 Nov, domestic), ECH 11,000 (18 Nov), acetic acid 3,840 (17 Nov). All single-source, indicative. Still not found: HDI monomer and Mysteel curing-agent page (fetch permission withdrawn in unattended run), 2-EHA (GuideChem page not reachable), E-20, HDI biuret, S-100, Brent 18 Nov settlement, DCE EB/BZ and ZCE PL 18 Nov closes. Blocked earlier today: sunsirs, 100ppi, chemnet. No forecasts (Wednesday)."
  },
  "prices": [
   {
@@ -108,6 +108,118 @@
    "source": "cngold.org (supplier ex-works offer)",
    "source_url": "https://www.cngold.org/c/2026-11-18/c10889084.html",
    "source_title": "200# 溶剂油 出厂价"
+  },
+  {
+   "material": "xylene",
+   "market": "China · East China",
+   "price_avg": 7000,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/1330-20-7.html",
+   "source_title": "Xylene, East China/Shandong first-class (-33 d/d)"
+  },
+  {
+   "material": "styrene",
+   "market": "China · East China spot",
+   "price_avg": 9810,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/100-42-5.html",
+   "source_title": "Styrene, East China Shandong 99.8% min"
+  },
+  {
+   "material": "phthalic-anhydride",
+   "market": "China",
+   "price_avg": 9800,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/85-44-9.html",
+   "source_title": "Phthalic anhydride, East China >=99% (-50 d/d)"
+  },
+  {
+   "material": "mma",
+   "market": "China",
+   "price_avg": 9500,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/80-62-6.html",
+   "source_title": "MMA 99.9% locally made itemized quote (headline grade blank, 12,450)"
+  },
+  {
+   "material": "hema",
+   "market": "China",
+   "price_avg": 14300,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/868-77-9.html",
+   "source_title": "HEMA Shandong content 97%, East China"
+  },
+  {
+   "material": "bpa",
+   "market": "China · East China",
+   "price_avg": 10620,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/80-05-7.html",
+   "source_title": "Bisphenol A, domestic first-class"
+  },
+  {
+   "material": "ech",
+   "market": "China · East China",
+   "price_avg": 11000,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/106-89-8.html",
+   "source_title": "ECH, East China Shandong first-class 99.9% min"
+  },
+  {
+   "material": "acetic-acid",
+   "market": "China · East China",
+   "price_avg": 3840,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "GuideChem GuideTrends",
+   "source_url": "https://www.guidechem.com/price/en/64-19-7.html",
+   "source_title": "Acetic acid, East China first-class"
   }
  ],
  "drivers": [
@@ -396,11 +508,11 @@
   },
   {
    "material": "acrylic-emulsions",
-   "summary": "AI interpretation: Component costs eased: styrene futures fell ~2.9% on 18 Nov with port stocks building, while Wanhua held East China BA at 10,800 and AA at 9,400 CNY/t (BA down from 10,950 on 13 Nov). 2-EHA had no fresh print. The index is drifting lower, led by styrene and BA.",
+   "summary": "AI interpretation: Styrene spot (45%) held at 9,810 CNY/t on 18 Nov in Shandong even as futures fell ~2.9%; Wanhua held East China BA at 10,800 and AA at 9,400 CNY/t (BA down from 10,950 on 13 Nov). 2-EHA had no fresh print. The index is flat to slightly lower, led by BA.",
    "drivers": [
     {
      "name": "Styrene (45%)",
-     "note": "Futures down, port stocks building",
+     "note": "Spot 9,810 flat; futures down, port stocks building",
      "influence": "high"
     },
     {
@@ -425,6 +537,7 @@
     }
    ],
    "evidence": [
+    "https://www.guidechem.com/price/en/100-42-5.html",
     "https://m.mysteel.com/hot/1602700.html",
     "https://k.sina.cn/article_5953190046_162d6789e06703xow0.html",
     "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
@@ -432,7 +545,7 @@
   },
   {
    "material": "pure-acrylic",
-   "summary": "AI interpretation: BA (55%) eased to 10,800 CNY/t and AA (5%) held at 9,400 CNY/t per Wanhua's 18 Nov East China quote; MMA had no reliable fresh print (sources disagree widely). Net cost pressure is slightly lower and the near term looks stable to soft.",
+   "summary": "AI interpretation: BA (55%) eased to 10,800 CNY/t and AA (5%) held at 9,400 CNY/t per Wanhua 18 Nov; GuideChem shows MMA 99.9% at 9,500 CNY/t (17 Nov) but its ungraded headline is 12,450, so the MMA level is uncertain. Net cost pressure is slightly lower; near term stable to soft.",
    "drivers": [
     {
      "name": "Butyl acrylate",
@@ -441,7 +554,7 @@
     },
     {
      "name": "MMA",
-     "note": "No reliable print; divergent supplier quotes",
+     "note": "99.9% itemized 9,500 vs ungraded headline 12,450; treat as indicative",
      "influence": "medium"
     },
     {
@@ -458,16 +571,17 @@
    ],
    "evidence": [
     "https://m.mysteel.com/hot/1602700.html",
-    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html",
+    "https://www.guidechem.com/price/en/80-62-6.html"
    ]
   },
   {
    "material": "epoxy-resin",
-   "summary": "AI interpretation: ChemicalBook provincial quotes put East China E-51 at 15,350-15,600 CNY/t on 17 Nov, while some 18 Nov supplier offers for 128# were lower at 14,500. No BPA/ECH print was found inside the window. Sentiment is soft with petrochemicals falling, so offers may test lower.",
+   "summary": "AI interpretation: ChemicalBook provincial quotes put East China E-51 at 15,350-15,600 CNY/t on 17 Nov, while some 18 Nov 128# offers were lower at 14,500. Upstream BPA eased to 10,620 (from 10,700 on 16 Nov) and ECH held at 11,000 CNY/t, so cost support is flat to soft and offers may test lower.",
    "drivers": [
     {
      "name": "Upstream BPA/ECH",
-     "note": "No fresh print; benzene and propylene futures fell >3%",
+     "note": "BPA 10,620 (-80 since 16 Nov), ECH 11,000 flat",
      "influence": "medium"
     },
     {
@@ -484,7 +598,9 @@
    ],
    "evidence": [
     "https://www.chemicalbook.com/priceindex_cb32131152.htm",
-    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html",
+    "https://www.guidechem.com/price/en/80-05-7.html",
+    "https://www.guidechem.com/price/en/106-89-8.html"
    ]
   },
   {
@@ -514,22 +630,27 @@
   },
   {
    "material": "acrylic-polyol",
-   "summary": "AI interpretation: Xylene (40%) had no reliable East China assessment; styrene (12%) fell in futures, BA (15%) eased to 10,800 CNY/t, MMA and HEMA had no reliable print. Overall cost direction is mildly lower with weaker aromatics.",
+   "summary": "AI interpretation: Xylene (40%) slipped to 7,000 CNY/t and styrene (12%) held at 9,810; BA (15%) eased to 10,800; HEMA 97% flat at 14,300 and MMA 99.9% at 9,500 (indicative). The index is drifting mildly lower on aromatics.",
    "drivers": [
     {
      "name": "Xylene",
-     "note": "No assessment; PX futures -3.9% on 18 Nov",
+     "note": "7,000 CNY/t, -50 over two days; PX futures -3.9%",
      "influence": "high"
     },
     {
      "name": "Styrene",
-     "note": "Futures down ~2.9%",
+     "note": "Spot 9,810 flat",
      "influence": "medium"
     },
     {
      "name": "Butyl acrylate",
      "note": "10,800 CNY/t",
      "influence": "medium"
+    },
+    {
+     "name": "HEMA",
+     "note": "97% grade flat at 14,300",
+     "influence": "low"
     }
    ],
    "actions": [
@@ -539,6 +660,9 @@
     }
    ],
    "evidence": [
+    "https://www.guidechem.com/price/en/1330-20-7.html",
+    "https://www.guidechem.com/price/en/100-42-5.html",
+    "https://www.guidechem.com/price/en/868-77-9.html",
     "https://www.qyld.info/variety-detail/PX/quotes",
     "https://m.mysteel.com/hot/1602700.html",
     "https://k.sina.cn/article_5953190046_162d6789e06703xow0.html"
@@ -546,7 +670,7 @@
   },
   {
    "material": "alkyd-resins",
-   "summary": "AI interpretation: First-grade soybean oil (48%) at Zhangjiagang fell 50 to 8,840 CNY/t on 18 Nov as DCE soy and palm oil dropped; 200# solvent (30%) supplier offer rose to 9,200 CNY/t but is a single offer; PA (22%) had no fresh print. Net direction slightly lower on vegetable oil weakness.",
+   "summary": "AI interpretation: First-grade soybean oil (48%) at Zhangjiagang fell 50 to 8,840 CNY/t on 18 Nov as DCE soy and palm oil dropped; 200# solvent (30%) supplier offer rose to 9,200 CNY/t but is a single offer; PA (22%) eased 50 to 9,800 CNY/t in East China on 17 Nov. Net direction slightly lower on vegetable oil weakness.",
    "drivers": [
     {
      "name": "Soybean oil",
@@ -574,7 +698,8 @@
     "https://m.mysteel.com/hot/1529561.html",
     "https://m.mysteel.com/hot/1570719.html",
     "https://www.cngold.org/c/2026-11-18/c10889084.html",
-    "https://www.brecorder.com/news/40449549/palm-falls-over-1-on-high-stocks-soft-demand-weak-rival-oils?v=u3Rvp0b0FpQOxDMc4iSmhwx6"
+    "https://www.brecorder.com/news/40449549/palm-falls-over-1-on-high-stocks-soft-demand-weak-rival-oils?v=u3Rvp0b0FpQOxDMc4iSmhwx6",
+    "https://www.guidechem.com/price/en/85-44-9.html"
    ]
   },
   {
@@ -610,17 +735,17 @@
   },
   {
    "material": "xylene",
-   "summary": "AI interpretation: No reliable East China mixed-xylene assessment was available; ChemicalBook supplier offers for 17 Nov span 6,500-8,500 CNY/t in Jiangsu/Zhejiang with Sinopec isomer grade at 7,450 in Hunan. PX futures fell ~3.9% and an expected domestic fuel price cut point lower.",
+   "summary": "AI interpretation: GuideChem puts East China/Shandong mixed xylene at 7,000 CNY/t on 18 Nov, down 50 from 7,050 on 16 Nov, while Sinopec list prices sit at 7,350-7,800. PX futures fell ~3.9% on 18 Nov and a domestic fuel price cut is expected, so offers should stay soft near term.",
    "drivers": [
+    {
+     "name": "East China spot",
+     "note": "7,000 CNY/t, -33 d/d",
+     "influence": "high"
+    },
     {
      "name": "PX futures",
      "note": "8,044, -3.87% on 18 Nov",
      "influence": "high"
-    },
-    {
-     "name": "Crude",
-     "note": "Brent down ~1.8% intraday 18 Nov",
-     "influence": "medium"
     },
     {
      "name": "Fuel price cut",
@@ -635,6 +760,7 @@
     }
    ],
    "evidence": [
+    "https://www.guidechem.com/price/en/1330-20-7.html",
     "https://www.chemicalbook.com/PriceInfo_1137658.htm",
     "https://www.qyld.info/variety-detail/PX/quotes",
     "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html"
