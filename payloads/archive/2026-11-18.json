@@ -1,14 +1,78 @@
 {
   "schema_version": "1.0",
   "run": {
-    "generated_at": "2026-11-18T00:15:00+04:00",
+    "generated_at": "2026-11-18T05:58:58+04:00",
     "generator": "scheduled market run",
     "model": "claude-opus-5-5",
-    "notes": "Manual run just after midnight Dubai: no new price/driver figures published since previous payload (17 Nov Brent settlement and China closes not yet available); 3 new events; forecasts not produced (not Monday)."
+    "notes": "17 Nov China futures closes, Brent 17 Nov settlement and 18 Nov USDCNY fix found; no new dated material spot prices published since the previous payload; 4 new events; no forecasts (not Monday). Archive also retains rows from the earlier 18 Nov run."
   },
   "prices": [],
-  "drivers": [],
-  "fx": [],
+  "drivers": [
+    {
+      "code": "DCE_EB",
+      "contract": "main contract, close",
+      "value": 8924,
+      "observed_on": "2026-11-17",
+      "source": "JRJ (finance.jrj.com.cn)",
+      "source_url": "https://finance.jrj.com.cn/2026/11/17152859172915.shtml"
+    },
+    {
+      "code": "DCE_BZ",
+      "contract": "main contract, close",
+      "value": 7490,
+      "observed_on": "2026-11-17",
+      "source": "JRJ (finance.jrj.com.cn)",
+      "source_url": "https://finance.jrj.com.cn/2026/11/17152859172915.shtml"
+    },
+    {
+      "code": "ZCE_PL",
+      "contract": "main contract, close",
+      "value": 8748,
+      "observed_on": "2026-11-17",
+      "source": "JRJ (finance.jrj.com.cn)",
+      "source_url": "https://finance.jrj.com.cn/2026/11/17152859172915.shtml"
+    },
+    {
+      "code": "ZCE_PX",
+      "contract": "main contract, close",
+      "value": 8314,
+      "observed_on": "2026-11-17",
+      "source": "JRJ (finance.jrj.com.cn)",
+      "source_url": "https://finance.jrj.com.cn/2026/11/17152859172915.shtml"
+    },
+    {
+      "code": "ZCE_MA",
+      "contract": "main contract, close",
+      "value": 3129,
+      "observed_on": "2026-11-17",
+      "source": "JRJ (finance.jrj.com.cn)",
+      "source_url": "https://finance.jrj.com.cn/2026/11/17152859172915.shtml"
+    },
+    {
+      "code": "PALM_OIL",
+      "contract": "main contract, close",
+      "value": 8794,
+      "observed_on": "2026-11-17",
+      "source": "JRJ (finance.jrj.com.cn)",
+      "source_url": "https://finance.jrj.com.cn/2026/11/17152859172915.shtml"
+    },
+    {
+      "code": "BRENT",
+      "contract": "front month, settlement (USD/bbl)",
+      "value": 93.14,
+      "observed_on": "2026-11-17",
+      "source": "BigGo Finance",
+      "source_url": "https://finance.biggo.com/news/fb107718-2833-4dbb-98cf-1ca40b6ef331"
+    }
+  ],
+  "fx": [
+    {
+      "pair": "USDCNY",
+      "rate": 6.7118,
+      "observed_on": "2026-11-18",
+      "source_url": "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67118-vs-67132-previous-202611180115"
+    }
+  ],
   "events": [
     {
       "material": null,
@@ -21,7 +85,7 @@
       "event_date": "2026-11-17",
       "source": "Transport Topics",
       "source_url": "https://www.ttnews.com/articles/oil-prices-vessel-attacks",
-      "is_alert": true
+      "is_alert": false
     },
     {
       "material": null,
@@ -48,66 +112,126 @@
       "source": "FinanceFeeds",
       "source_url": "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/",
       "is_alert": false
+    },
+    {
+      "material": null,
+      "event_type": "geopolitics",
+      "title": "Houthis claim drone attack on two East-West pipeline pumping stations",
+      "summary": "The Houthis said they fired five drones at two pumping stations on Saudi Arabia's East-West pipeline, the main route bypassing Hormuz; Brent nonetheless settled only $0.70 higher at $93.14 on 17 Nov as surplus expectations offset attacks.",
+      "company": null,
+      "direction": "up",
+      "impact": "high",
+      "event_date": "2026-11-17",
+      "source": "BigGo Finance",
+      "source_url": "https://finance.biggo.com/news/fb107718-2833-4dbb-98cf-1ca40b6ef331",
+      "is_alert": true
+    },
+    {
+      "material": null,
+      "event_type": "geopolitics",
+      "title": "Iranian drones target US radar site in Bahrain",
+      "summary": "Iran's Revolutionary Guards fired drones at a US military radar system at Sheikh Isa base in Bahrain; Bahrain said the attack was intercepted, as Iran and Oman discussed protecting Hormuz shipping lanes.",
+      "company": null,
+      "direction": "up",
+      "impact": "medium",
+      "event_date": "2026-11-17",
+      "source": "Honolulu Star-Advertiser (Reuters)",
+      "source_url": "https://www.staradvertiser.com/2026/11/17/breaking-news/iran-attacks-u-s-military-radar-system-in-bahrain-with-drones/",
+      "is_alert": false
+    },
+    {
+      "material": "tio2",
+      "event_type": "capacity",
+      "title": "TiPMC sees cautious TiO2 recovery as European capacity returns",
+      "summary": "TiPMC's fall forecast puts 2027 global TiO2 demand at 7.61 Mt (+3.2%), notes ~310 kt/yr of former Venator sites in the UK, Spain and Italy returning under new owners, and sees continued chloride capacity growth in China.",
+      "company": "TiPMC Consulting",
+      "direction": "down",
+      "impact": "low",
+      "event_date": "2026-11-13",
+      "source": "PCI Magazine",
+      "source_url": "https://www.pcimag.com/articles/115502-tio-recovery-faces-new-pressure-as-global-capacity-returns",
+      "is_alert": false
+    },
+    {
+      "material": null,
+      "event_type": "other",
+      "title": "PBOC sets strongest yuan fix since 2022",
+      "summary": "The PBOC set the USD/CNY reference rate at 6.7118 on 18 Nov (vs 6.7132), its strongest fix since 2022, raising the USD cost of China-sourced raw materials at the margin.",
+      "company": null,
+      "direction": "up",
+      "impact": "low",
+      "event_date": "2026-11-18",
+      "source": "Bloomberg",
+      "source_url": "https://bloomberg.com/news/articles/2026-11-18/pboc-sets-strongest-yuan-fix-since-2022-to-allow-further-gains",
+      "is_alert": false
     }
   ],
   "analyses": [
     {
       "material": "tio2",
-      "summary": "AI interpretation: No new TiO2 price was published since the 17 Nov Mysteel reading (sulphate rutile average 13,351 CNY/t, falling). Off-season inventory build in China and flat concentrate costs keep the bias soft. Weaker crude and energy prices do not change the TiO2 picture materially in the short term.",
+      "summary": "AI interpretation: No new dated China TiO2 price was published after the 17 Nov reading, which showed sulphate rutile still drifting lower in the off-season. TiPMC's fall outlook describes only a cautious recovery, with restarted European capacity and growing Chinese chloride output limiting upside into 2027. A slightly stronger yuan marginally lifts USD-denominated Chinese offers, but weak demand dominates near term.",
       "drivers": [
         {
-          "name": "Chinese plant inventories",
-          "note": "Building in off-season",
+          "name": "Global capacity",
+          "note": "~310 kt/yr ex-Venator sites returning; China chloride growth",
           "influence": "high"
         },
         {
-          "name": "Concentrate cost",
-          "note": "Flat; ample port stocks",
+          "name": "Seasonal demand",
+          "note": "Off-season inventory build in China",
           "influence": "medium"
+        },
+        {
+          "name": "CNY strength",
+          "note": "Strongest fix since 2022",
+          "influence": "low"
         }
       ],
       "actions": [
         {
           "department": "Procurement",
-          "action": "Continue hand-to-mouth buying; no need to cover beyond December."
+          "action": "Keep cover short; use returning European supply to test non-China offers for Q1."
+        },
+        {
+          "department": "Finance",
+          "action": "Budget TiO2 flat to slightly lower for Q1, with a small FX allowance for CNY strength."
         }
       ],
       "evidence": [
-        "https://list1.m.mysteel.com/zhishi/2026ntbfjgylb.html",
-        "https://news.metal.com/newscontent/5QWG6BLYK4JBWE4THWMC3GCCTIGHOTLSSRHU7SA-titanium-supply-demand-under-pressure-across-the-entire-chain-prices-consolidate-at-lows-smm-titanium-weekly-review"
+        "https://www.pcimag.com/articles/115502-tio-recovery-faces-new-pressure-as-global-capacity-returns",
+        "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67118-vs-67132-previous-202611180115",
+        "https://bloomberg.com/news/articles/2026-11-18/pboc-sets-strongest-yuan-fix-since-2022-to-allow-further-gains"
       ]
     },
     {
       "material": "styrene",
-      "summary": "AI interpretation: Chinese styrene, benzene and propylene futures fell more than 3% on 17 Nov, following crude lower on surplus expectations, even as tanker attacks near Hormuz continued. The East China spot reference of ~9,600 CNY/t (16 Nov) is likely to ease further unless Middle East supply disruption escalates.",
+      "summary": "AI interpretation: DCE styrene closed at 8,924 CNY/t on 17 Nov (-3.1%) with benzene down 4.3%, pointing to further easing in East China spot from the ~9,600 CNY/t reference. Brent edged up to $93.14 despite new attacks on the Saudi East-West pipeline and in Bahrain, showing the market is weighing surplus expectations above disruption. Upside risk stays tied to any escalation that cuts Middle East export routes.",
       "drivers": [
         {
-          "name": "Crude oil",
-          "note": "Surplus outlook vs Hormuz attacks",
+          "name": "Benzene feedstock",
+          "note": "DCE benzene 7,490 CNY/t, -4.3%",
           "influence": "high"
         },
         {
-          "name": "Chinese futures sentiment",
-          "note": "Broad petrochemical sell-off on 17 Nov",
-          "influence": "medium"
+          "name": "Crude oil",
+          "note": "Surplus outlook vs Middle East attacks",
+          "influence": "high"
         }
       ],
       "actions": [
         {
           "department": "Procurement",
-          "action": "Hold off on forward styrene cover; reassess if Hormuz attacks escalate."
+          "action": "Buy styrene and styrene-acrylic needs spot; avoid forward cover while futures fall."
         },
         {
           "department": "Finance",
-          "action": "Flag two-sided crude risk in Q1 cost budgets."
+          "action": "Keep two-sided crude risk flagged in Q1 cost budgets."
         }
       ],
       "evidence": [
-        "https://www.sohu.com/a/1102721801_362042",
-        "https://www.ttnews.com/articles/oil-prices-vessel-attacks",
-        "https://financefeeds.com/brent-crude-oil-price-91-66-tuesday-goldman-glut-warning-bull-96-bear-88/",
-        "https://www.chemicalbook.com/priceindex_cb3415111.htm",
-        "https://www.nationthailand.com/news/world/40073582"
+        "https://finance.jrj.com.cn/2026/11/17152859172915.shtml",
+        "https://finance.biggo.com/news/fb107718-2833-4dbb-98cf-1ca40b6ef331",
+        "https://www.staradvertiser.com/2026/11/17/breaking-news/iran-attacks-u-s-military-radar-system-in-bahrain-with-drones/"
       ]
     }
   ],
