@@ -1,12 +1,115 @@
 {
   "schema_version": "1.0",
   "run": {
-    "generated_at": "2026-11-18T05:58:58+04:00",
+    "generated_at": "2026-11-18T23:45:00+04:00",
     "generator": "scheduled market run",
     "model": "claude-opus-5-5",
-    "notes": "17 Nov China futures closes, Brent 17 Nov settlement and 18 Nov USDCNY fix found; no new dated material spot prices published since the previous payload; 4 new events; no forecasts (not Monday). Archive also retains rows from the earlier 18 Nov run."
+    "notes": "Evening run 18 Nov (merged with earlier 18 Nov rows). New: TiO2 chloride (SMM 16 Nov), E-51 East China and butyl acetate (ChemicalBook 17 Nov), BA/AA (Wanhua East China 18 Nov), first-grade soybean oil (18 Nov), 200# solvent (single supplier offer); drivers ZCE_PX, ZCE_MA, Bursa palm oil (MYR), n-butanol. Not found: HDI, xylene East China assessment, styrene spot, MMA (sources conflict), PA, 2-EHA, HEMA, BPA, ECH, acetic acid East China, E-20, HDI biuret, S-100, DCE EB/BZ and ZCE PL closes, Brent 18 Nov settlement. Blocked: sunsirs, 100ppi, chemnet (security checks). No forecasts (Wednesday)."
   },
-  "prices": [],
+  "prices": [
+    {
+      "material": "tio2",
+      "market": "China · chloride process",
+      "price_avg": 15100,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": null,
+      "observed_on": "2026-11-16",
+      "confidence": "indicative",
+      "source": "SMM",
+      "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
+      "price_low": 13400,
+      "price_high": 16800,
+      "source_title": "SMM Titanium Spot Report (18 Nov; prices dated 16 Nov)"
+    },
+    {
+      "material": "epoxy-resin",
+      "market": "China · E-51 liquid",
+      "price_avg": 15475,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": null,
+      "observed_on": "2026-11-17",
+      "confidence": "indicative",
+      "source": "ChemicalBook",
+      "source_url": "https://www.chemicalbook.com/priceindex_cb32131152.htm",
+      "price_low": 15350,
+      "price_high": 15600,
+      "source_title": "环氧树脂价格行情 – E-51 provincial quotes Jiangsu/Zhejiang/Shanghai"
+    },
+    {
+      "material": "butyl-acetate",
+      "market": "China · East China",
+      "price_avg": 7700,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": null,
+      "observed_on": "2026-11-17",
+      "confidence": "indicative",
+      "source": "ChemicalBook",
+      "source_url": "https://m.chemicalbook.com/priceindex_cb6671615.htm",
+      "source_title": "醋酸丁酯价格行情 – Jiangsu provincial quote"
+    },
+    {
+      "material": "butyl-acrylate",
+      "market": "China · East China",
+      "price_avg": 10800,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": null,
+      "observed_on": "2026-11-18",
+      "confidence": "indicative",
+      "source": "Mysteel (Longzhong producer quote)",
+      "source_url": "https://m.mysteel.com/hot/1602700.html",
+      "source_title": "万华化学华东地区价格 11月18日"
+    },
+    {
+      "material": "acrylic-acid",
+      "market": "China · East China",
+      "price_avg": 9400,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": null,
+      "observed_on": "2026-11-18",
+      "confidence": "indicative",
+      "source": "Mysteel (Longzhong producer quote)",
+      "source_url": "https://m.mysteel.com/hot/1602700.html",
+      "source_title": "万华化学华东地区价格 11月18日"
+    },
+    {
+      "material": "soybean-oil",
+      "market": "China",
+      "price_avg": 8840,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": null,
+      "observed_on": "2026-11-18",
+      "confidence": "indicative",
+      "source": "Mysteel",
+      "source_url": "https://m.mysteel.com/hot/1529561.html",
+      "source_title": "国标一等散装 张家港 市场价格 (first-grade soybean oil)"
+    },
+    {
+      "material": "white-spirit",
+      "market": "China · 200# solvent oil",
+      "price_avg": 9200,
+      "currency": "CNY",
+      "unit": "t",
+      "incl_vat": true,
+      "incoterm": "EXW",
+      "observed_on": "2026-11-18",
+      "confidence": "indicative",
+      "source": "cngold.org (supplier ex-works offer)",
+      "source_url": "https://www.cngold.org/c/2026-11-18/c10889084.html",
+      "source_title": "200# 溶剂油 出厂价"
+    }
+  ],
   "drivers": [
     {
       "code": "DCE_EB",
@@ -63,6 +166,38 @@
       "observed_on": "2026-11-17",
       "source": "BigGo Finance",
       "source_url": "https://finance.biggo.com/news/fb107718-2833-4dbb-98cf-1ca40b6ef331"
+    },
+    {
+      "code": "ZCE_PX",
+      "contract": "main contract (latest price, statistic date 18 Nov)",
+      "value": 8044,
+      "observed_on": "2026-11-18",
+      "source": "qyld.info",
+      "source_url": "https://www.qyld.info/variety-detail/PX/quotes"
+    },
+    {
+      "code": "ZCE_MA",
+      "contract": "main contract (latest price, 18 Nov)",
+      "value": 3076,
+      "observed_on": "2026-11-18",
+      "source": "qyld.info",
+      "source_url": "https://www.qyld.info/variety-detail/MA"
+    },
+    {
+      "code": "PALM_OIL",
+      "contract": "Bursa FCPO Feb-2027",
+      "value": 4387,
+      "observed_on": "2026-11-18",
+      "source": "Business Recorder (Reuters)",
+      "source_url": "https://www.brecorder.com/news/40449549/palm-falls-over-1-on-high-stocks-soft-demand-weak-rival-oils?v=u3Rvp0b0FpQOxDMc4iSmhwx6"
+    },
+    {
+      "code": "NBUTANOL",
+      "contract": "Shandong spot",
+      "value": 7400,
+      "observed_on": "2026-11-18",
+      "source": "Mysteel (Oilchem daily review)",
+      "source_url": "https://m.mysteel.com/hot/1593011.html"
     }
   ],
   "fx": [
@@ -164,74 +299,452 @@
       "source": "Bloomberg",
       "source_url": "https://bloomberg.com/news/articles/2026-11-18/pboc-sets-strongest-yuan-fix-since-2022-to-allow-further-gains",
       "is_alert": false
+    },
+    {
+      "material": "tio2",
+      "event_type": "demand",
+      "title": "SMM: TiO2 prices consolidate at lows as high run rates meet off-season",
+      "summary": "SMM's 18 Nov spot report says TiO2 prices were flat at lows (chloride 13,400-16,800 CNY/t) with high operating rates and ample spot supply; titanium concentrate and sulphuric acid prices kept weakening, eroding cost support.",
+      "company": null,
+      "direction": "down",
+      "impact": "medium",
+      "event_date": "2026-11-18",
+      "source": "SMM",
+      "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
+      "is_alert": false
+    },
+    {
+      "material": null,
+      "event_type": "geopolitics",
+      "title": "US strike on Iranian missile site on Qeshm Island reported",
+      "summary": "Chinese media citing Xinhua reported a US strike on an Iranian missile launch site on Qeshm Island on 17 Nov; oil nonetheless fell on 18 Nov (Brent about -1.8% intraday) on oversupply expectations.",
+      "company": null,
+      "direction": "up",
+      "impact": "high",
+      "event_date": "2026-11-17",
+      "source": "Sina Finance",
+      "source_url": "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html",
+      "is_alert": true
+    },
+    {
+      "material": null,
+      "event_type": "regulation",
+      "title": "China retail fuel price cut expected on 26 Nov",
+      "summary": "Reference crude averaged $90.78/bbl as of 18 Nov (-6.24%), pointing to a domestic fuel price cut of about 390 CNY/t at the 26 Nov adjustment window; bearish for aromatic solvents.",
+      "company": null,
+      "direction": "down",
+      "impact": "low",
+      "event_date": "2026-11-18",
+      "source": "Sina Finance",
+      "source_url": "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html",
+      "is_alert": false
+    },
+    {
+      "material": "styrene",
+      "event_type": "demand",
+      "title": "China chemical futures extend losses on 18 Nov",
+      "summary": "Styrene futures fell about 2.9% (8,843 CNY/t intraday) and benzene, PX and propylene each fell over 3% on 18 Nov; port styrene inventories continue to build.",
+      "company": null,
+      "direction": "down",
+      "impact": "medium",
+      "event_date": "2026-11-18",
+      "source": "STNN / Sina Finance",
+      "source_url": "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html",
+      "is_alert": false
+    },
+    {
+      "material": "soybean-oil",
+      "event_type": "demand",
+      "title": "Dalian palm and soybean oil fall on 18 Nov",
+      "summary": "DCE palm oil main contract closed 8,606 CNY/t (-3.02%) and soybean oil 8,528 CNY/t (-63) on 18 Nov; Bursa FCPO fell 1.1% on high stocks and soft demand.",
+      "company": null,
+      "direction": "down",
+      "impact": "low",
+      "event_date": "2026-11-18",
+      "source": "Mysteel",
+      "source_url": "https://m.mysteel.com/hot/1570719.html",
+      "is_alert": false
     }
   ],
   "analyses": [
     {
       "material": "tio2",
-      "summary": "AI interpretation: No new dated China TiO2 price was published after the 17 Nov reading, which showed sulphate rutile still drifting lower in the off-season. TiPMC's fall outlook describes only a cautious recovery, with restarted European capacity and growing Chinese chloride output limiting upside into 2027. A slightly stronger yuan marginally lifts USD-denominated Chinese offers, but weak demand dominates near term.",
+      "summary": "AI interpretation: SMM put chloride-process TiO2 at 13,400-16,800 CNY/t (avg 15,100) on 16 Nov, slightly below the 15,400 midpoint of 13 Nov, and reported prices flat at lows on 18 Nov. High run rates, off-season demand and weakening titanium concentrate and acid costs point to a flat-to-softer near term.",
       "drivers": [
         {
-          "name": "Global capacity",
-          "note": "~310 kt/yr ex-Venator sites returning; China chloride growth",
+          "name": "Supply",
+          "note": "High operating rates, ample spot stock",
           "influence": "high"
         },
         {
-          "name": "Seasonal demand",
-          "note": "Off-season inventory build in China",
+          "name": "Feedstock cost",
+          "note": "Concentrate and sulphuric acid still weakening",
           "influence": "medium"
         },
         {
-          "name": "CNY strength",
-          "note": "Strongest fix since 2022",
+          "name": "Seasonal demand",
+          "note": "Winter off-season in coatings",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Buy hand-to-mouth; seek price cuts on December volumes."
+        },
+        {
+          "department": "Finance",
+          "action": "Keep Q1 budget flat to slightly lower."
+        }
+      ],
+      "evidence": [
+        "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
+        "https://news.metal.com/newscontent/S6DILRMLD6R436DTKJETPBEWNQROBKVG5PAVUGA-titanium-dioxide-center-declines-weak-supply-demand-trend-continues-smm-titanium-spot-express"
+      ]
+    },
+    {
+      "material": "acrylic-emulsions",
+      "summary": "AI interpretation: Component costs eased: styrene futures fell ~2.9% on 18 Nov with port stocks building, while Wanhua held East China BA at 10,800 and AA at 9,400 CNY/t (BA down from 10,950 on 13 Nov). 2-EHA had no fresh print. The index is drifting lower, led by styrene and BA.",
+      "drivers": [
+        {
+          "name": "Styrene (45%)",
+          "note": "Futures down, port stocks building",
+          "influence": "high"
+        },
+        {
+          "name": "Butyl acrylate (35%)",
+          "note": "10,800 CNY/t, -150 vs 13 Nov",
+          "influence": "high"
+        },
+        {
+          "name": "Acrylic acid (8%)",
+          "note": "9,400 CNY/t, flat for three days",
           "influence": "low"
         }
       ],
       "actions": [
         {
           "department": "Procurement",
-          "action": "Keep cover short; use returning European supply to test non-China offers for Q1."
+          "action": "Defer emulsion contract renewals a week to capture lower styrene."
         },
         {
-          "department": "Finance",
-          "action": "Budget TiO2 flat to slightly lower for Q1, with a small FX allowance for CNY strength."
+          "department": "Sales",
+          "action": "Hold price lists; no cost push."
         }
       ],
       "evidence": [
-        "https://www.pcimag.com/articles/115502-tio-recovery-faces-new-pressure-as-global-capacity-returns",
-        "https://www.fxstreet.com/news/pboc-sets-usd-cny-reference-rate-at-67118-vs-67132-previous-202611180115",
-        "https://bloomberg.com/news/articles/2026-11-18/pboc-sets-strongest-yuan-fix-since-2022-to-allow-further-gains"
+        "https://m.mysteel.com/hot/1602700.html",
+        "https://k.sina.cn/article_5953190046_162d6789e06703xow0.html",
+        "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
       ]
     },
     {
-      "material": "styrene",
-      "summary": "AI interpretation: DCE styrene closed at 8,924 CNY/t on 17 Nov (-3.1%) with benzene down 4.3%, pointing to further easing in East China spot from the ~9,600 CNY/t reference. Brent edged up to $93.14 despite new attacks on the Saudi East-West pipeline and in Bahrain, showing the market is weighing surplus expectations above disruption. Upside risk stays tied to any escalation that cuts Middle East export routes.",
+      "material": "pure-acrylic",
+      "summary": "AI interpretation: BA (55%) eased to 10,800 CNY/t and AA (5%) held at 9,400 CNY/t per Wanhua's 18 Nov East China quote; MMA had no reliable fresh print (sources disagree widely). Net cost pressure is slightly lower and the near term looks stable to soft.",
       "drivers": [
         {
-          "name": "Benzene feedstock",
-          "note": "DCE benzene 7,490 CNY/t, -4.3%",
+          "name": "Butyl acrylate",
+          "note": "10,800 CNY/t, negotiated on actual orders",
           "influence": "high"
         },
         {
-          "name": "Crude oil",
-          "note": "Surplus outlook vs Middle East attacks",
-          "influence": "high"
+          "name": "MMA",
+          "note": "No reliable print; divergent supplier quotes",
+          "influence": "medium"
+        },
+        {
+          "name": "Propylene",
+          "note": "ZCE propylene down over 3% on 18 Nov",
+          "influence": "medium"
         }
       ],
       "actions": [
         {
           "department": "Procurement",
-          "action": "Buy styrene and styrene-acrylic needs spot; avoid forward cover while futures fall."
-        },
-        {
-          "department": "Finance",
-          "action": "Keep two-sided crude risk flagged in Q1 cost budgets."
+          "action": "Negotiate BA-linked discounts for December."
         }
       ],
       "evidence": [
-        "https://finance.jrj.com.cn/2026/11/17152859172915.shtml",
-        "https://finance.biggo.com/news/fb107718-2833-4dbb-98cf-1ca40b6ef331",
-        "https://www.staradvertiser.com/2026/11/17/breaking-news/iran-attacks-u-s-military-radar-system-in-bahrain-with-drones/"
+        "https://m.mysteel.com/hot/1602700.html",
+        "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+      ]
+    },
+    {
+      "material": "epoxy-resin",
+      "summary": "AI interpretation: ChemicalBook provincial quotes put East China E-51 at 15,350-15,600 CNY/t on 17 Nov, while some 18 Nov supplier offers for 128# were lower at 14,500. No BPA/ECH print was found inside the window. Sentiment is soft with petrochemicals falling, so offers may test lower.",
+      "drivers": [
+        {
+          "name": "Upstream BPA/ECH",
+          "note": "No fresh print; benzene and propylene futures fell >3%",
+          "influence": "medium"
+        },
+        {
+          "name": "Supplier offers",
+          "note": "128# offers 14,500-15,200 on 18 Nov",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Ask for re-quotes against 14,500-15,000 offers before committing December volumes."
+        }
+      ],
+      "evidence": [
+        "https://www.chemicalbook.com/priceindex_cb32131152.htm",
+        "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+      ]
+    },
+    {
+      "material": "epoxy-solid",
+      "summary": "AI interpretation: No dated E-20 price was found; the app's model tracks E-51 (East China 15,350-15,600 on 17 Nov), implying a model level near 15,275 CNY/t. Direction follows liquid epoxy, which is soft.",
+      "drivers": [
+        {
+          "name": "E-51 liquid",
+          "note": "Model anchor; soft",
+          "influence": "high"
+        },
+        {
+          "name": "Phenol/BPA chain",
+          "note": "Benzene futures weaker",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Use E-51 movement to challenge solid-resin offers."
+        }
+      ],
+      "evidence": [
+        "https://www.chemicalbook.com/priceindex_cb32131152.htm"
+      ]
+    },
+    {
+      "material": "acrylic-polyol",
+      "summary": "AI interpretation: Xylene (40%) had no reliable East China assessment; styrene (12%) fell in futures, BA (15%) eased to 10,800 CNY/t, MMA and HEMA had no reliable print. Overall cost direction is mildly lower with weaker aromatics.",
+      "drivers": [
+        {
+          "name": "Xylene",
+          "note": "No assessment; PX futures -3.9% on 18 Nov",
+          "influence": "high"
+        },
+        {
+          "name": "Styrene",
+          "note": "Futures down ~2.9%",
+          "influence": "medium"
+        },
+        {
+          "name": "Butyl acrylate",
+          "note": "10,800 CNY/t",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Hold purchases short; aromatics trending down."
+        }
+      ],
+      "evidence": [
+        "https://www.qyld.info/variety-detail/PX/quotes",
+        "https://m.mysteel.com/hot/1602700.html",
+        "https://k.sina.cn/article_5953190046_162d6789e06703xow0.html"
+      ]
+    },
+    {
+      "material": "alkyd-resins",
+      "summary": "AI interpretation: First-grade soybean oil (48%) at Zhangjiagang fell 50 to 8,840 CNY/t on 18 Nov as DCE soy and palm oil dropped; 200# solvent (30%) supplier offer rose to 9,200 CNY/t but is a single offer; PA (22%) had no fresh print. Net direction slightly lower on vegetable oil weakness.",
+      "drivers": [
+        {
+          "name": "Soybean oil",
+          "note": "8,840 CNY/t, -50; DCE Y 8,528",
+          "influence": "high"
+        },
+        {
+          "name": "White spirit",
+          "note": "Single supplier offer 9,200",
+          "influence": "medium"
+        },
+        {
+          "name": "Palm oil",
+          "note": "Bursa -1.1%, DCE -3%",
+          "influence": "low"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Lock part of Q1 soybean-oil-based alkyd needs if offers fall further."
+        }
+      ],
+      "evidence": [
+        "https://m.mysteel.com/hot/1529561.html",
+        "https://m.mysteel.com/hot/1570719.html",
+        "https://www.cngold.org/c/2026-11-18/c10889084.html",
+        "https://www.brecorder.com/news/40449549/palm-falls-over-1-on-high-stocks-soft-demand-weak-rival-oils?v=u3Rvp0b0FpQOxDMc4iSmhwx6"
+      ]
+    },
+    {
+      "material": "pu-hardener",
+      "summary": "AI interpretation: No dated HDI monomer or HDI biuret 75% price was found today; the model therefore carries the last calibrated level. Butyl acetate held around 7,700 CNY/t (Jiangsu, 17 Nov). Without HDI news, near-term direction is flat.",
+      "drivers": [
+        {
+          "name": "HDI monomer",
+          "note": "No fresh public print",
+          "influence": "high"
+        },
+        {
+          "name": "Butyl acetate",
+          "note": "7,700 CNY/t Jiangsu",
+          "influence": "low"
+        },
+        {
+          "name": "n-Butanol",
+          "note": "Shandong 7,400 CNY/t, -100",
+          "influence": "low"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Request HDI-based hardener quotes from two suppliers to refresh the benchmark."
+        }
+      ],
+      "evidence": [
+        "https://m.chemicalbook.com/priceindex_cb6671615.htm",
+        "https://m.mysteel.com/hot/1593011.html"
+      ]
+    },
+    {
+      "material": "xylene",
+      "summary": "AI interpretation: No reliable East China mixed-xylene assessment was available; ChemicalBook supplier offers for 17 Nov span 6,500-8,500 CNY/t in Jiangsu/Zhejiang with Sinopec isomer grade at 7,450 in Hunan. PX futures fell ~3.9% and an expected domestic fuel price cut point lower.",
+      "drivers": [
+        {
+          "name": "PX futures",
+          "note": "8,044, -3.87% on 18 Nov",
+          "influence": "high"
+        },
+        {
+          "name": "Crude",
+          "note": "Brent down ~1.8% intraday 18 Nov",
+          "influence": "medium"
+        },
+        {
+          "name": "Fuel price cut",
+          "note": "~390 CNY/t expected 26 Nov",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Avoid forward buying; expect softer xylene offers next week."
+        }
+      ],
+      "evidence": [
+        "https://www.chemicalbook.com/PriceInfo_1137658.htm",
+        "https://www.qyld.info/variety-detail/PX/quotes",
+        "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html"
+      ]
+    },
+    {
+      "material": "butyl-acetate",
+      "summary": "AI interpretation: ChemicalBook shows East China butyl acetate at 7,700 CNY/t (Jiangsu, 17 Nov); feedstock n-butanol fell 100 to 7,400 CNY/t in Shandong on 18 Nov. Softer butanol suggests a stable-to-lower near term.",
+      "drivers": [
+        {
+          "name": "n-Butanol",
+          "note": "-100 CNY/t on 18 Nov",
+          "influence": "high"
+        },
+        {
+          "name": "Acetic acid",
+          "note": "No East China assessment",
+          "influence": "low"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Push for a small reduction on next butyl acetate order."
+        }
+      ],
+      "evidence": [
+        "https://m.chemicalbook.com/priceindex_cb6671615.htm",
+        "https://m.mysteel.com/hot/1593011.html"
+      ]
+    },
+    {
+      "material": "solvent-naphtha",
+      "summary": "AI interpretation: No dated S-100# price was found; the model follows xylene, for which only wide supplier offers exist. Aromatics futures were weak and a fuel price cut is expected, so the bias is lower.",
+      "drivers": [
+        {
+          "name": "Xylene",
+          "note": "Model anchor; weak aromatics",
+          "influence": "high"
+        },
+        {
+          "name": "Crude",
+          "note": "Easing",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Keep S-100 purchases spot-based."
+        }
+      ],
+      "evidence": [
+        "https://www.qyld.info/variety-detail/PX/quotes",
+        "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html"
+      ]
+    },
+    {
+      "material": "white-spirit",
+      "summary": "AI interpretation: A Shandong supplier quoted 200# solvent oil ex-works at 9,200 CNY/t on 18 Nov, up from 8,800 on 17 Nov; this is a single offer and conflicts with weaker crude and an expected fuel price cut. Treat the rise as supplier-specific until confirmed.",
+      "drivers": [
+        {
+          "name": "Crude/fuel prices",
+          "note": "Cut of ~390 CNY/t expected 26 Nov",
+          "influence": "medium"
+        },
+        {
+          "name": "Single-supplier offer",
+          "note": "+400 day-on-day",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Get competing 200# quotes before accepting increases."
+        }
+      ],
+      "evidence": [
+        "https://www.cngold.org/c/2026-11-18/c10889084.html",
+        "https://www.cngold.org/c/2026-11-17/c10886362.html",
+        "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html"
+      ]
+    },
+    {
+      "material": "calcium-carbonate",
+      "summary": "AI interpretation: No price series is tracked; no calcium carbonate events were found today. Logistics costs are the main swing factor given Middle East shipping risk.",
+      "drivers": [
+        {
+          "name": "Freight/geopolitics",
+          "note": "Hormuz-area incidents",
+          "influence": "medium"
+        }
+      ],
+      "actions": [
+        {
+          "department": "Procurement",
+          "action": "Check freight surcharges on imported grades."
+        }
+      ],
+      "evidence": [
+        "https://k.sina.cn/article_7857201856_1d45362c001908vcg6.html"
       ]
     }
   ],
