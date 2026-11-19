@@ -152,20 +152,6 @@
    "source_title": "Phthalic anhydride, East China >=99% (-50 d/d)"
   },
   {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 9500,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "GuideChem GuideTrends",
-   "source_url": "https://www.guidechem.com/price/en/80-62-6.html",
-   "source_title": "MMA 99.9% locally made itemized quote (headline grade blank, 12,450)"
-  },
-  {
    "material": "hema",
    "market": "China",
    "price_avg": 14300,
