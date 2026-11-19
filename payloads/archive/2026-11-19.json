@@ -1,10 +1,10 @@
 {
  "schema_version": "1.0",
  "run": {
-  "generated_at": "2026-11-19T06:30:00+04:00",
+  "generated_at": "2026-11-19T06:18:52+04:00",
   "generator": "scheduled market run",
   "model": "claude-opus-5-5",
-  "notes": "Early run 19 Nov (Dubai 05:40-06:30, before China market hours) — most prices are 17-18 Nov. Found: xylene 7,000; styrene 9,810 (GuideChem) and Jiangsu 10,200 (Mysteel); E-51 15,000 (Mysteel, 18 Nov, -100); BA 10,800; AA 9,400; soybean oil 8,840; butyl acetate 7,750 (GuideChem domestic); PA 9,800; MMA 99.9% 9,500; HEMA 97% 14,300; BPA 10,620/10,750; ECH 11,000/10,950 (verified); acetic acid 3,840; TiO2 chloride 14,000-16,800 (SMM 6 Nov, latest readable). Drivers: Brent 91.95 (18 Nov), 92.44 (16 Nov); FCPO Feb 4,547 (16 Nov); Ti concentrate 1,125 (6 Nov); USDCNY 6.7128 (19 Nov). NOT found: HDI monomer (Mysteel curing-agent page and GuideChem 822-06-0 not reachable — fetch permission withdrawn), 2-EHA, 200# white spirit (cngold 18 Nov page not reachable), E-20, HDI biuret, S-100#, DCE EB/BZ and ZCE PL/PX/MA closes (only % moves; conflicting intraday prints), n-butanol, freight, Bursa 18 Nov close. Blocked (security check): sunsirs.com, chemnet.com. No forecasts (Thursday)."
+  "notes": "Early run 19 Nov (Dubai 05:40-06:30, before China market hours) — most prices are 17-18 Nov. Found: xylene 7,000; styrene 9,810 (GuideChem) and Jiangsu 10,200 (Mysteel); E-51 15,000 (Mysteel, 18 Nov, -100); BA 10,800; AA 9,400; soybean oil 8,840; butyl acetate 7,750 (GuideChem domestic); PA 9,800; MMA 99.9% 9,500; HEMA 97% 14,300; BPA 10,620/10,750; ECH 11,000/10,950 (verified); acetic acid 3,840; TiO2 chloride 14,000-16,800 (SMM 6 Nov, latest readable). Drivers: Brent 91.95 (18 Nov), 92.44 (16 Nov); FCPO Feb 4,547 (16 Nov); Ti concentrate 1,125 (6 Nov); USDCNY 6.7128 (19 Nov). NOT found: HDI monomer (Mysteel curing-agent page and GuideChem 822-06-0 not reachable — fetch permission withdrawn), 2-EHA, 200# white spirit (cngold 18 Nov page not reachable), E-20, HDI biuret, S-100#, DCE EB/BZ and ZCE PL/PX/MA closes (only % moves; conflicting intraday prints), n-butanol, freight, Bursa 18 Nov close. Blocked (security check): sunsirs.com, chemnet.com. No forecasts (Thursday). | Merged with second 19 Nov run: added TiO2 chloride 13,400-16,800 (SMM spot report 18 Nov), butyl acetate East China 7,350-7,500 (Mysteel 18 Nov, -125) and 7,700 (ChemicalBook Jiangsu 17 Nov), HEMA 97% 14,300 dated 18 Nov, E-51 and butyl-acetate decline events; tio2 and butyl-acetate analyses updated."
  },
  "prices": [
   {
@@ -250,6 +250,64 @@
    "price_low": 14000,
    "price_high": 16800,
    "source_title": "SMM Titanium Weekly Review (6 Nov)"
+  },
+  {
+   "material": "tio2",
+   "market": "China · chloride process",
+   "price_avg": 15100,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "SMM (news.metal.com) titanium spot report",
+   "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
+   "price_low": 13400,
+   "price_high": 16800,
+   "source_title": "High Operating Rates Meet Off-Season, Prices Remain Under Pressure and Consolidate at Lows [SMM Titanium Spot Report]"
+  },
+  {
+   "material": "butyl-acetate",
+   "market": "China · East China",
+   "price_avg": 7425,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": "EXW",
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "Mysteel (m.mysteel.com) butyl acetate East China report",
+   "source_url": "https://m.mysteel.com/hot/1600858.html",
+   "price_low": 7350,
+   "price_high": 7500,
+   "source_title": "华东醋酸丁酯 现汇出厂"
+  },
+  {
+   "material": "butyl-acetate",
+   "market": "China · East China",
+   "price_avg": 7700,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "ChemicalBook butyl acetate price index (Jiangsu)",
+   "source_url": "https://m.chemicalbook.com/priceindex_cb6671615.htm"
+  },
+  {
+   "material": "hema",
+   "market": "China",
+   "price_avg": 14300,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "GuideChem itemized quote, East China (Shandong) 97%",
+   "source_url": "https://www.guidechem.com/price/kr/868-77-9.html"
   }
  ],
  "drivers": [
@@ -346,37 +404,76 @@
    "source": "Mysteel (m.mysteel.com)",
    "source_url": "https://m.mysteel.com/hot/1601773.html",
    "is_alert": false
+  },
+  {
+   "material": "tio2",
+   "event_type": "demand",
+   "title": "China TiO2 prices held at lows as high operating rates meet off-season",
+   "summary": "SMM (18 Nov) reports chloride-process TiO2 at 13,400–16,800 CNY/t and rutile at 11,700–14,000 CNY/t, with high operating rates, weak off-season demand and further softening in titanium concentrate; SMM expects prices to stay under pressure.",
+   "company": null,
+   "direction": "down",
+   "impact": "medium",
+   "event_date": "2026-11-18",
+   "source": "SMM",
+   "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
+   "is_alert": false
+  },
+  {
+   "material": "epoxy-resin",
+   "event_type": "demand",
+   "title": "East China liquid epoxy E-51 slips 100 CNY/t",
+   "summary": "Mysteel quotes East China liquid E-51 at 14,900–15,100 CNY/t ex-works on 18 Nov, down 100 CNY/t day on day.",
+   "company": null,
+   "direction": "down",
+   "impact": "low",
+   "event_date": "2026-11-18",
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1601520.html",
+   "is_alert": false
+  },
+  {
+   "material": "butyl-acetate",
+   "event_type": "demand",
+   "title": "East China butyl acetate falls 125 CNY/t",
+   "summary": "Mysteel reports East China n-butyl acetate down 125 CNY/t on 18 Nov to 7,350–7,500 CNY/t cash ex-works, following weaker feedstocks.",
+   "company": null,
+   "direction": "down",
+   "impact": "low",
+   "event_date": "2026-11-18",
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1600858.html",
+   "is_alert": false
   }
  ],
  "analyses": [
   {
    "material": "tio2",
-   "summary": "AI interpretation: No new SMM TiO2 print was readable today; the latest weekly review in hand (6 Nov) put chloride-process TiO2 at 14,000-16,800 CNY/t with concentrate flat and plants running at high rates. With off-season coatings demand and weak feedstock, the near-term bias stays flat to slightly softer.",
+   "summary": "AI interpretation: China chloride-process TiO2 remains at 13,400–16,800 CNY/t (mid 15,100) on 18 Nov, unchanged from earlier this week. High operating rates, off-season demand and softer titanium concentrate keep the market under pressure; near-term direction flat to slightly lower.",
    "drivers": [
     {
-     "name": "Supply",
-     "note": "High operating rates, ample stock",
+     "name": "Operating rates",
+     "note": "High producer run rates and inventories",
      "influence": "high"
     },
     {
-     "name": "Feedstock",
-     "note": "Titanium concentrate flat ~1,125 CNY/t, some mine cuts",
+     "name": "Seasonal demand",
+     "note": "Off-season coatings demand",
      "influence": "medium"
     },
     {
-     "name": "Demand",
-     "note": "Winter off-season",
+     "name": "Titanium concentrate",
+     "note": "Upstream ore prices still weakening",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Buy hand-to-mouth; push for lower December prices."
+     "action": "Buy hand-to-mouth; no need to pre-buy ahead of December"
     }
    ],
    "evidence": [
-    "https://news.metal.com/newscontent/104209690-off-season-suppresses-demand-titanium-market-consolidates-at-lows-with-little-chance-of-rising-in-the-short-term-smm-titanium-weekly-review"
+    "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report"
    ]
   },
   {
@@ -629,32 +726,28 @@
   },
   {
    "material": "butyl-acetate",
-   "summary": "AI interpretation: Domestic 99.9% n-butyl acetate eased to 7,750 CNY/t on 18 Nov (-38). With acetic acid flat at 3,840 and n-butanol soft, cost support is limited; expect flat to slightly lower prices.",
+   "summary": "AI interpretation: East China n-butyl acetate fell 125 CNY/t to 7,350–7,500 CNY/t ex-works on 18 Nov (Mysteel), versus 7,700 in ChemicalBook's 17 Nov Jiangsu index. Inventories are building and feedstock acetic acid is weak (3,840), so further mild declines are likely.",
    "drivers": [
     {
      "name": "Acetic acid",
-     "note": "Flat at 3,840",
+     "note": "East China 3,840, flat-to-weak",
      "influence": "medium"
     },
     {
-     "name": "n-Butanol",
-     "note": "Soft",
-     "influence": "medium"
-    },
-    {
-     "name": "Demand",
-     "note": "Coatings off-season",
-     "influence": "medium"
+     "name": "Inventory",
+     "note": "Building in East China",
+     "influence": "high"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Hold; no need to extend cover."
+     "action": "Buy only immediate needs; expect lower levels next week"
     }
    ],
    "evidence": [
-    "https://www.guidechem.com/price/en/123-86-4.html",
+    "https://m.mysteel.com/hot/1600858.html",
+    "https://m.chemicalbook.com/priceindex_cb6671615.htm",
     "https://www.guidechem.com/price/en/64-19-7.html"
    ]
   },
