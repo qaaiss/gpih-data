@@ -1,12 +1,40 @@
 {
  "schema_version": "1.0",
  "run": {
-  "generated_at": "2026-11-19T06:18:52+04:00",
+  "generated_at": "2026-11-20T05:53:11+04:00",
   "generator": "scheduled market run",
   "model": "claude-opus-5-5",
-  "notes": "Early run 19 Nov (Dubai 05:40-06:30, before China market hours) — most prices are 17-18 Nov. Found: xylene 7,000; styrene 9,810 (GuideChem) and Jiangsu 10,200 (Mysteel); E-51 15,000 (Mysteel, 18 Nov, -100); BA 10,800; AA 9,400; soybean oil 8,840; butyl acetate 7,750 (GuideChem domestic); PA 9,800; MMA 99.9% 9,500; HEMA 97% 14,300; BPA 10,620/10,750; ECH 11,000/10,950 (verified); acetic acid 3,840; TiO2 chloride 14,000-16,800 (SMM 6 Nov, latest readable). Drivers: Brent 91.95 (18 Nov), 92.44 (16 Nov); FCPO Feb 4,547 (16 Nov); Ti concentrate 1,125 (6 Nov); USDCNY 6.7128 (19 Nov). NOT found: HDI monomer (Mysteel curing-agent page and GuideChem 822-06-0 not reachable — fetch permission withdrawn), 2-EHA, 200# white spirit (cngold 18 Nov page not reachable), E-20, HDI biuret, S-100#, DCE EB/BZ and ZCE PL/PX/MA closes (only % moves; conflicting intraday prints), n-butanol, freight, Bursa 18 Nov close. Blocked (security check): sunsirs.com, chemnet.com. No forecasts (Thursday). | Merged with second 19 Nov run: added TiO2 chloride 13,400-16,800 (SMM spot report 18 Nov), butyl acetate East China 7,350-7,500 (Mysteel 18 Nov, -125) and 7,700 (ChemicalBook Jiangsu 17 Nov), HEMA 97% 14,300 dated 18 Nov, E-51 and butyl-acetate decline events; tio2 and butyl-acetate analyses updated. | Backfill: 116 historical rows (2026-08-15 → 2026-11-18)"
+  "notes": "Early run 20 Nov (Dubai ~05:40-06:30, before China market hours), so most prints are 17-19 Nov. Direct checklist URLs could not be opened (fetch permission prompts unanswered in this unattended run); pages were reached via search results instead. Found: xylene 6,800 (GuideChem 19 Nov, -200); PA 9,667 (19 Nov, verified vs Mysteel 9,600); styrene 9,810 (18 Nov); E-51 14,900 (Mysteel 19 Nov, -100); BA 9,100/9,200/9,250 (Longzhong 16-18 Nov); MMA 12,300 (Longzhong 18 Nov); BPA 10,750; ECH 10,950; butyl acetate 7,700 (ChemicalBook Jiangsu 18 Nov) and 7,450-7,650 (Mysteel 17 Nov); acetic acid 3,550; TiO2 chloride 14,000-16,800 (SMM 6 Nov). Drivers: Brent 91.95 (18 Nov), FCPO Feb 4,547 (16 Nov), Ti concentrate 1,075 avg (6 Nov). FX: USDCNY 6.7132 (17 Nov), 6.7141 (16 Nov). NOT found: HDI monomer (Mysteel curing-agent page and GuideChem 822-06-0 not reachable), soybean oil spot (10jqka pages unreadable), 2-EHA, acrylic acid, HEMA, white spirit 200#, E-20, HDI biuret, S-100#, DCE/ZCE futures closes, n-butanol, freight, today's USDCNY parity. Blocked: 100ppi.com (security check), nenghua.m.mysteel.com (robots), news.10jqka.com.cn (redirect loop / permission denied), cls.cn (binary). Data note: earlier payload shows East China BA 10,800 (m.mysteel 1602700, 18 Nov) vs Longzhong 9,100 the same day — conflicting series; today's Longzhong prints are 9,100-9,250. No forecasts (Friday)."
  },
  "prices": [
+  {
+   "material": "xylene",
+   "market": "China · East China",
+   "price_avg": 6800,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-19",
+   "confidence": "indicative",
+   "source": "GuideChem",
+   "source_url": "https://www.guidechem.com/price/en/1330-20-7.html",
+   "source_title": "Xylene price, Shandong isomer-grade first class (East China), updated 2026-11-19, -200 DoD"
+  },
+  {
+   "material": "xylene",
+   "market": "China · East China",
+   "price_avg": 7033,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "GuideChem",
+   "source_url": "https://www.guidechem.com/price/en/1330-20-7.html",
+   "source_title": "Xylene price, Shandong isomer-grade first class (East China), 2026-11-17"
+  },
   {
    "material": "xylene",
    "market": "China · East China",
@@ -19,7 +47,35 @@
    "confidence": "indicative",
    "source": "GuideChem",
    "source_url": "https://www.guidechem.com/price/en/1330-20-7.html",
-   "source_title": "Xylene, Shandong heterogeneous-level first-class (headline East China)"
+   "source_title": "Xylene price, Shandong isomer-grade first class (East China), 2026-11-18"
+  },
+  {
+   "material": "phthalic-anhydride",
+   "market": "China",
+   "price_avg": 9667,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-19",
+   "confidence": "verified",
+   "source": "GuideChem",
+   "source_url": "https://www.guidechem.com/price/en/85-44-9.html",
+   "source_title": "Phthalic anhydride East China ≥99%, updated 2026-11-19, -116 DoD"
+  },
+  {
+   "material": "phthalic-anhydride",
+   "market": "China",
+   "price_avg": 9783,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "verified",
+   "source": "GuideChem",
+   "source_url": "https://www.guidechem.com/price/en/85-44-9.html",
+   "source_title": "Phthalic anhydride East China ≥99%, 2026-11-18"
   },
   {
    "material": "styrene",
@@ -33,65 +89,105 @@
    "confidence": "indicative",
    "source": "GuideChem",
    "source_url": "https://www.guidechem.com/price/en/100-42-5.html",
-   "source_title": "Styrene, Shandong first-class 99.8% min"
+   "source_title": "Styrene Shandong first-class 99.8% (East China), updated 2026-11-18"
   },
   {
-   "material": "styrene",
-   "market": "China · East China spot",
-   "price_avg": 10200,
+   "material": "epoxy-resin",
+   "market": "China · E-51 liquid",
+   "price_avg": 14900,
    "currency": "CNY",
    "unit": "t",
    "incl_vat": true,
    "incoterm": null,
-   "observed_on": "2026-11-18",
+   "observed_on": "2026-11-19",
    "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1601111.html",
-   "price_low": 10150,
-   "price_high": 10250,
-   "source_title": "Styrene Jiangsu spot daily review 18 Nov"
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1630286.html",
+   "source_title": "Mysteel E-51 market price box, 2026-11-19, -100 (region not printed)"
   },
   {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_avg": 9800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/85-44-9.html",
-   "source_title": "Phthalic anhydride East China >=99%"
-  },
-  {
-   "material": "hema",
-   "market": "China",
-   "price_avg": 14300,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/868-77-9.html",
-   "source_title": "HEMA East China (Shandong) 97%"
-  },
-  {
-   "material": "bpa",
+   "material": "butyl-acrylate",
    "market": "China · East China",
-   "price_avg": 10620,
+   "price_avg": 9100,
    "currency": "CNY",
    "unit": "t",
    "incl_vat": true,
    "incoterm": null,
    "observed_on": "2026-11-18",
    "confidence": "indicative",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/80-05-7.html",
-   "source_title": "BPA domestic first-class"
+   "source": "Mysteel (Longzhong daily)",
+   "source_url": "https://m.mysteel.com/hot/1602706.html",
+   "source_title": "丙烯酸丁酯日评 20261118: East China close 9,100 (-100)"
+  },
+  {
+   "material": "butyl-acrylate",
+   "market": "China · East China",
+   "price_avg": 9200,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "Mysteel (Longzhong daily)",
+   "source_url": "https://m.mysteel.com/hot/1602706.html",
+   "source_title": "丙烯酸丁酯日评 20261117: East China 9,200 (-50)"
+  },
+  {
+   "material": "butyl-acrylate",
+   "market": "China · East China",
+   "price_avg": 9250,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-16",
+   "confidence": "indicative",
+   "source": "Mysteel (Longzhong daily)",
+   "source_url": "https://m.mysteel.com/hot/1602706.html",
+   "source_title": "丙烯酸丁酯日评 20261116: East China close 9,250 (-200)"
+  },
+  {
+   "material": "mma",
+   "market": "China",
+   "price_avg": 12300,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "Mysteel (Longzhong MMA日评)",
+   "source_url": "https://www.mysteel.com/hot/1592840.html",
+   "source_title": "MMA日评 20261118: East China close 12,300"
+  },
+  {
+   "material": "mma",
+   "market": "China",
+   "price_avg": 12450,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-17",
+   "confidence": "indicative",
+   "source": "Mysteel (Longzhong MMA日评)",
+   "source_url": "https://www.mysteel.com/hot/1592840.html",
+   "source_title": "MMA日评 20261117: East China 12,450"
+  },
+  {
+   "material": "mma",
+   "market": "China",
+   "price_avg": 12600,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-16",
+   "confidence": "indicative",
+   "source": "Mysteel (Longzhong MMA日评)",
+   "source_url": "https://www.mysteel.com/hot/1601165.html",
+   "source_title": "MMA日评 20261116: East China close 12,600 (-200)"
   },
   {
    "material": "bpa",
@@ -101,25 +197,13 @@
    "unit": "t",
    "incl_vat": true,
    "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "Epoxy daily review: BPA East China"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11000,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
    "observed_on": "2026-11-18",
    "confidence": "verified",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/106-89-8.html",
-   "source_title": "ECH Shandong first-class 99.9% min"
+   "source": "Mysteel (Longzhong BPA日评)",
+   "source_url": "https://m.mysteel.com/hot/1592961.html",
+   "source_title": "BPA日评 20261118: East China 10,700-10,800, stable",
+   "price_low": 10700,
+   "price_high": 10800
   },
   {
    "material": "ech",
@@ -129,97 +213,57 @@
    "unit": "t",
    "incl_vat": true,
    "incoterm": null,
-   "observed_on": "2026-11-16",
+   "observed_on": "2026-11-18",
    "confidence": "verified",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "Epoxy daily review: ECH Jiangsu"
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1601471.html",
+   "source_title": "11月18日江苏市场环氧氯丙烷价格行情: 10,900-11,000 acceptance delivered, unchanged",
+   "price_low": 10900,
+   "price_high": 11000
   },
   {
-   "material": "acetic-acid",
+   "material": "butyl-acetate",
    "market": "China · East China",
-   "price_avg": 3840,
+   "price_avg": 7700,
+   "currency": "CNY",
+   "unit": "t",
+   "incl_vat": true,
+   "incoterm": null,
+   "observed_on": "2026-11-18",
+   "confidence": "indicative",
+   "source": "ChemicalBook",
+   "source_url": "https://m.chemicalbook.com/priceindex_cb6671615.htm",
+   "source_title": "ChemicalBook 乙酸丁酯 price index, Jiangsu 2026-11-18"
+  },
+  {
+   "material": "butyl-acetate",
+   "market": "China · East China",
+   "price_avg": 7550,
    "currency": "CNY",
    "unit": "t",
    "incl_vat": true,
    "incoterm": null,
    "observed_on": "2026-11-17",
    "confidence": "indicative",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/64-19-7.html",
-   "source_title": "Acetic acid East China first-class"
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1600847.html",
+   "source_title": "11月17日华东市场醋酸丁酯价格行情: 7,450-7,650 cash ex-works (-50)",
+   "price_low": 7450,
+   "price_high": 7650
   },
   {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_avg": 15000,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "price_low": 14900,
-   "price_high": 15100,
-   "source_title": "Liquid epoxy E-51 East China ex-works, daily review 18 Nov"
-  },
-  {
-   "material": "butyl-acrylate",
+   "material": "acetic-acid",
    "market": "China · East China",
-   "price_avg": 10800,
+   "price_avg": 3550,
    "currency": "CNY",
    "unit": "t",
    "incl_vat": true,
    "incoterm": null,
    "observed_on": "2026-11-18",
    "confidence": "indicative",
-   "source": "Mysteel / Longzhong (producer quote)",
-   "source_url": "https://m.mysteel.com/hot/1602700.html",
-   "source_title": "Butyl acrylate East China producer quote"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_avg": 9400,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel / Longzhong (producer quote)",
-   "source_url": "https://m.mysteel.com/hot/1602700.html",
-   "source_title": "Acrylic acid East China producer quote"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 8840,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/zta/douyou/",
-   "source_title": "First-grade soybean oil, Jiangsu flat price"
-  },
-  {
-   "material": "butyl-acetate",
-   "market": "China · East China",
-   "price_avg": 7750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/123-86-4.html",
-   "source_title": "n-Butyl acetate domestic national standard 99.9%"
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1600847.html",
+   "source_title": "冰醋酸及醋酸酯日评 20261118: Jiangsu glacial acetic acid 3,550 (flat)"
   },
   {
    "material": "tio2",
@@ -233,1827 +277,23 @@
    "confidence": "indicative",
    "source": "SMM",
    "source_url": "https://news.metal.com/newscontent/104209690-off-season-suppresses-demand-titanium-market-consolidates-at-lows-with-little-chance-of-rising-in-the-short-term-smm-titanium-weekly-review",
+   "source_title": "SMM Titanium Weekly Review 6 Nov: chloride-process TiO2 14,000-16,800",
    "price_low": 14000,
-   "price_high": 16800,
-   "source_title": "SMM Titanium Weekly Review (6 Nov)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_avg": 15100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "SMM (news.metal.com) titanium spot report",
-   "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
-   "price_low": 13400,
-   "price_high": 16800,
-   "source_title": "High Operating Rates Meet Off-Season, Prices Remain Under Pressure and Consolidate at Lows [SMM Titanium Spot Report]"
-  },
-  {
-   "material": "butyl-acetate",
-   "market": "China · East China",
-   "price_avg": 7425,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": "EXW",
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com) butyl acetate East China report",
-   "source_url": "https://m.mysteel.com/hot/1600858.html",
-   "price_low": 7350,
-   "price_high": 7500,
-   "source_title": "华东醋酸丁酯 现汇出厂"
-  },
-  {
-   "material": "butyl-acetate",
-   "market": "China · East China",
-   "price_avg": 7700,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "ChemicalBook butyl acetate price index (Jiangsu)",
-   "source_url": "https://m.chemicalbook.com/priceindex_cb6671615.htm"
-  },
-  {
-   "material": "hema",
-   "market": "China",
-   "price_avg": 14300,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "GuideChem itemized quote, East China (Shandong) 97%",
-   "source_url": "https://www.guidechem.com/price/kr/868-77-9.html"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7200,
-   "price_high": 7300,
-   "price_avg": 7250,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-27",
-   "confidence": "indicative",
-   "source": "100ppi (生意社) via steeldeep.com",
-   "source_url": "https://www.steeldeep.com/news/2026-8-27/12964.html",
-   "source_title": "生意社: 8月27日华东地区二甲苯市场价格上调 – East China xylene mainstream spot range"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7200,
-   "price_high": 7270,
-   "price_avg": 7235,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-28",
-   "confidence": "indicative",
-   "source": "100ppi (生意社) via steeldeep.com",
-   "source_url": "https://www.steeldeep.com/news/2026-8-28/13031.html",
-   "source_title": "生意社: 8月28日华东地区二甲苯市场价格下调 – East China xylene mainstream spot range"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7350,
-   "price_high": 7450,
-   "price_avg": 7400,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-31",
-   "confidence": "indicative",
-   "source": "100ppi (生意社) via steeldeep.com",
-   "source_url": "https://www.steeldeep.com/news/2026-8-31/13099.html",
-   "source_title": "生意社: 8月31日华东地区二甲苯市场价格上调 – East China xylene mainstream spot range"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7750,
-   "price_high": 7800,
-   "price_avg": 7775,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-01",
-   "confidence": "indicative",
-   "source": "100ppi (生意社) via steeldeep.com",
-   "source_url": "https://www.steeldeep.com/news/2026-9-1/13170.html",
-   "source_title": "生意社: 9月1日华东地区二甲苯市场价格上调 – East China xylene mainstream spot range"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7500,
-   "price_high": 7530,
-   "price_avg": 7515,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "indicative",
-   "source": "Longzhong (隆众) via Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601110.html",
-   "source_title": "江苏溶剂二甲苯 market spot offers (Jiangsu/East China solvent-grade mixed xylene)"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7500,
-   "price_high": 7530,
-   "price_avg": 7515,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "Longzhong (隆众) via Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601110.html",
-   "source_title": "江苏溶剂二甲苯 market spot offers (Jiangsu/East China solvent-grade mixed xylene)"
-  },
-  {
-   "material": "xylene",
-   "market": "China · East China",
-   "price_low": 7350,
-   "price_high": 7400,
-   "price_avg": 7375,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Longzhong (隆众) via Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601110.html",
-   "source_title": "江苏溶剂二甲苯 market spot offers, down 130-150 (Jiangsu/East China solvent-grade mixed xylene)"
-  },
-  {
-   "material": "white-spirit",
-   "market": "China · 200# solvent oil",
-   "price_avg": 5700,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-02",
-   "confidence": "indicative",
-   "source": "ChemicalBook supplier quote via Chemall (中国石油和化工网)",
-   "source_url": "https://www.chemall.com.cn/news/show-260602.html",
-   "source_title": "200# solvent oil, Shandong-origin, Changzhou (Jiangsu) trader market quote"
-  },
-  {
-   "material": "white-spirit",
-   "market": "China · 200# solvent oil",
-   "price_avg": 5700,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "ChemicalBook supplier quote",
-   "source_url": "https://www.chemicalbook.com/priceindex_cb5938980.htm",
-   "source_title": "200# solvent oil, Changzhou (Jiangsu) trader quote, same supplier line as 2026-09-02"
-  },
-  {
-   "material": "solvent-naphtha",
-   "market": "China · S-100#",
-   "price_avg": 7100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-02",
-   "confidence": "indicative",
-   "source": "ChemicalBook supplier quote via Chemall (中国石油和化工网)",
-   "source_url": "https://www.chemall.com.cn/news/show-260602.html",
-   "source_title": "芳汀100# (IBP 155°C), domestic, Hubei trader market quote"
-  },
-  {
-   "material": "2-eha",
-   "market": "China",
-   "price_low": 11000,
-   "price_high": 11200,
-   "price_avg": 11100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-20",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com hot page, daily commentary)",
-   "source_url": "https://m.mysteel.com/hot/1600875.html",
-   "source_title": "2-EHA South China market price (delivered, cash)"
-  },
-  {
-   "material": "2-eha",
-   "market": "China",
-   "price_low": 10900,
-   "price_high": 11100,
-   "price_avg": 11000,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-12",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "2-EHA South China market price (delivered)"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_low": 7700,
-   "price_high": 7800,
-   "price_avg": 7750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-30",
-   "confidence": "indicative",
-   "source": "隆众/market article via sohu.com",
-   "source_url": "https://www.sohu.com/a/1087662817_114984",
-   "source_title": "Acrylic acid East China market close"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_low": 8700,
-   "price_high": 8800,
-   "price_avg": 8750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-30",
-   "confidence": "indicative",
-   "source": "和讯网 via sohu.com (publ. Mon 2026-11-02)",
-   "source_url": "https://www.sohu.com/a/1095963852_639898",
-   "source_title": "Acrylic acid East China close, previous working day"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_avg": 8750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-10",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "Acrylic acid East China market price"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_low": 8500,
-   "price_high": 8600,
-   "price_avg": 8550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-12",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, morning note)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "Acrylic acid East China market price"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_avg": 8400,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "Acrylic acid East China market price"
-  },
-  {
-   "material": "acrylic-acid",
-   "market": "China · East China",
-   "price_avg": 7900,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com hot page, daily commentary)",
-   "source_url": "https://m.mysteel.com/hot/1600834.html",
-   "source_title": "Acrylic acid East China market price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_low": 9400,
-   "price_high": 9500,
-   "price_avg": 9450,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-23",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com hot page, daily commentary)",
-   "source_url": "https://m.mysteel.com/hot/1600845.html",
-   "source_title": "BA East China market negotiated price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_low": 9500,
-   "price_high": 9600,
-   "price_avg": 9550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-26",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com hot page, daily commentary)",
-   "source_url": "https://m.mysteel.com/hot/1600845.html",
-   "source_title": "BA East China market negotiated price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_avg": 9800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-09",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "BA East China closing price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_low": 9600,
-   "price_high": 9700,
-   "price_avg": 9650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-11",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "BA East China market negotiated price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_low": 9500,
-   "price_high": 9600,
-   "price_avg": 9550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-12",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "BA East China market negotiated price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_low": 9400,
-   "price_high": 9600,
-   "price_avg": 9500,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "Mysteel (www.mysteel.com hot page, daily commentary)",
-   "source_url": "https://www.mysteel.com/hot/1602709.html",
-   "source_title": "BA East China market negotiated price"
-  },
-  {
-   "material": "butyl-acrylate",
-   "market": "China · East China",
-   "price_low": 9050,
-   "price_high": 9150,
-   "price_avg": 9100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com hot page, daily commentary)",
-   "source_url": "https://m.mysteel.com/hot/1601163.html",
-   "source_title": "BA East China market negotiated price"
-  },
-  {
-   "material": "hema",
-   "market": "China",
-   "price_avg": 13600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-31",
-   "confidence": "indicative",
-   "source": "ChemicalBook price index (single supplier listing)",
-   "source_url": "https://m.chemicalbook.com/priceindex_cb4690827.htm",
-   "source_title": "HEMA 97% Shandong supplier quote (single trader listing, low reliability)"
-  },
-  {
-   "material": "hema",
-   "market": "China",
-   "price_avg": 14500,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "verified",
-   "source": "ChemicalBook price index (provincial latest quote)",
-   "source_url": "https://m.chemicalbook.com/priceindex_cb4690827.htm",
-   "source_title": "HEMA 97% Shandong latest quote (trader listing-based, low reliability)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 13150,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-14",
-   "confidence": "indicative",
-   "source": "sohu.com (MMA market article, publ. 2026-09-16)",
-   "source_url": "https://www.sohu.com/a/1076881389_121123900",
-   "source_title": "MMA East China market reference, morning of 9/14"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12900,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-09",
-   "confidence": "indicative",
-   "source": "隆众资讯 daily comment via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1601165.html",
-   "source_title": "MMA East China price (今日点评)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-10",
-   "confidence": "indicative",
-   "source": "隆众资讯 daily comment via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1601165.html",
-   "source_title": "MMA East China price (今日点评)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-11",
-   "confidence": "indicative",
-   "source": "隆众资讯 MMA日评 via nenghua.mysteel.com",
-   "source_url": "https://nenghua.mysteel.com/a/26111116/AA453D75C61DD2E6.html",
-   "source_title": "MMA East China spot close (daily review)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-12",
-   "confidence": "indicative",
-   "source": "隆众资讯 daily comment via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1601165.html",
-   "source_title": "MMA East China price (今日点评)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "隆众资讯 MMA日评 via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1592840.html",
-   "source_title": "MMA East China spot (daily review)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "indicative",
-   "source": "隆众资讯 MMA日评 via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1601165.html",
-   "source_title": "MMA East China spot close (daily review)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12450,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "隆众资讯 MMA日评 via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1592840.html",
-   "source_title": "MMA East China spot close (daily review)"
-  },
-  {
-   "material": "mma",
-   "market": "China",
-   "price_avg": 12300,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "隆众资讯 MMA日评 via mysteel.com",
-   "source_url": "https://www.mysteel.com/hot/1592840.html",
-   "source_title": "MMA East China spot close (daily review)"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 8850,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-20",
-   "confidence": "indicative",
-   "source": "华泰期货 油脂日报 via finance.sina.com.cn",
-   "source_url": "https://finance.sina.com.cn/money/future/fmnews/2026-08-21/doc-ininztww1490094.shtml",
-   "source_title": "一级豆油 Tianjin spot (daily note publ. 2026-08-21, prior session)"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 9050,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-21",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1485631.html",
-   "source_title": "一级豆油 (国标一等) Linyi Shandong producing-area sales price"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 9230,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-10",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1529561.html",
-   "source_title": "一级豆油 (国标一等 bulk) Zhangjiagang crusher market price, daily"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 8790,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-09",
-   "confidence": "indicative",
-   "source": "油脂日报 via sohu.com",
-   "source_url": "https://www.sohu.com/a/1099478822_122014422",
-   "source_title": "一级豆油 Tianjin spot (daily note publ. 2026-11-10, prior session)"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 8770,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-10",
-   "confidence": "indicative",
-   "source": "油脂日报 via k.sina.cn",
-   "source_url": "https://k.sina.cn/article_5953466437_162dab0450670bhin2.html",
-   "source_title": "一级豆油 Tianjin spot (daily note publ. 2026-11-11, prior session)"
-  },
-  {
-   "material": "soybean-oil",
-   "market": "China",
-   "price_avg": 8860,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "verified",
-   "source": "油脂日报 via sohu.com",
-   "source_url": "https://www.sohu.com/a/1102565330_122014422",
-   "source_title": "一级豆油 Tianjin spot (daily note publ. 2026-11-17, prior session)"
-  },
-  {
-   "material": "styrene",
-   "market": "China · East China spot",
-   "price_low": 10450,
-   "price_high": 10550,
-   "price_avg": 10500,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-15",
-   "confidence": "indicative",
-   "source": "futures daily note citing PEC, via sohu.com",
-   "source_url": "https://www.sohu.com/a/1076662392_122014422",
-   "source_title": "Styrene East China spot at close (prompt)"
-  },
-  {
-   "material": "styrene",
-   "market": "China · East China spot",
-   "price_low": 11300,
-   "price_high": 11520,
-   "price_avg": 11410,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-14",
-   "confidence": "indicative",
-   "source": "广发期货 daily note citing PEC, via k.sina.cn",
-   "source_url": "https://k.sina.cn/article_5953466437_162dab0450670bezj8.html",
-   "source_title": "Styrene East China spot at close (prompt)"
-  },
-  {
-   "material": "styrene",
-   "market": "China · East China spot",
-   "price_avg": 11425,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-21",
-   "confidence": "indicative",
-   "source": "sohu.com (market commentary)",
-   "source_url": "https://www.sohu.com/a/1091073382_114984",
-   "source_title": "Styrene Jiangsu market average at close"
-  },
-  {
-   "material": "styrene",
-   "market": "China · East China spot",
-   "price_low": 9950,
-   "price_high": 10080,
-   "price_avg": 10015,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1601111.html",
-   "source_title": "Styrene Jiangsu spot mainstream deal price"
-  },
-  {
-   "material": "acetic-acid",
-   "market": "China · East China",
-   "price_avg": 3750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-10",
-   "confidence": "indicative",
-   "source": "Mysteel (冰醋酸及醋酸酯日评)",
-   "source_url": "https://m.mysteel.com/hot/1600858.html",
-   "source_title": "冰醋酸 江苏 市场价 (daily review)"
-  },
-  {
-   "material": "acetic-acid",
-   "market": "China · East China",
-   "price_avg": 3715,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-11",
-   "confidence": "indicative",
-   "source": "Mysteel (冰醋酸及醋酸酯日评)",
-   "source_url": "https://m.mysteel.com/hot/1600858.html",
-   "source_title": "冰醋酸 江苏 市场价 (daily review)"
-  },
-  {
-   "material": "acetic-acid",
-   "market": "China · East China",
-   "price_avg": 3600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "Mysteel (冰醋酸及醋酸酯日评 20261113)",
-   "source_url": "https://m.mysteel.com/hot/1592852.html",
-   "source_title": "冰醋酸 江苏 市场价 (daily review)"
-  },
-  {
-   "material": "acetic-acid",
-   "market": "China · East China",
-   "price_avg": 3550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "indicative",
-   "source": "Mysteel (冰醋酸及醋酸酯日评 20261116)",
-   "source_url": "https://m.mysteel.com/hot/1601443.html",
-   "source_title": "冰醋酸 江苏 市场价 (daily review)"
-  },
-  {
-   "material": "acetic-acid",
-   "market": "China · East China",
-   "price_avg": 3550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (冰醋酸及醋酸酯日评 20261118)",
-   "source_url": "https://m.mysteel.com/hot/1601443.html",
-   "source_title": "冰醋酸 江苏 市场价 (daily review)"
-  },
-  {
-   "material": "butyl-acetate",
-   "market": "China · East China",
-   "price_avg": 7550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "verified",
-   "source": "Mysteel (冰醋酸及醋酸酯日评 20261117)",
-   "source_url": "https://m.mysteel.com/hot/1592852.html",
-   "source_title": "醋酸丁酯 华东 (daily review)"
-  },
-  {
-   "material": "butyl-acetate",
-   "market": "China · East China",
-   "price_low": 7350,
-   "price_high": 7500,
-   "price_avg": 7425,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel (华东市场醋酸丁酯价格行情)",
-   "source_url": "https://m.mysteel.com/hot/1600836.html",
-   "source_title": "醋酸丁酯 华东 现汇出厂 参考价"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_avg": 9400,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-03",
-   "confidence": "indicative",
-   "source": "生意社 (via chemistry.net.cn)",
-   "source_url": "https://chemistry.net.cn/Chemical-Info/163/154091.html",
-   "source_title": "生意社苯酐基准价 (benchmark, grade not stated)"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_avg": 10016.67,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-01",
-   "confidence": "indicative",
-   "source": "生意社 (via 新浪财经)",
-   "source_url": "https://finance.sina.com.cn/money/future/nyzx/2026-10-30/doc-iniwzazq5470728.shtml",
-   "source_title": "苯酐价格 10月1日 (生意社 DBP monthly; 邻法 context)"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_avg": 10733.33,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-30",
-   "confidence": "indicative",
-   "source": "生意社 (via 新浪财经)",
-   "source_url": "https://finance.sina.com.cn/money/future/nyzx/2026-10-30/doc-iniwzazq5470728.shtml",
-   "source_title": "邻法苯酐报价 10月30日 (生意社)"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_avg": 9850,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-15",
-   "confidence": "verified",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/85-44-9.html",
-   "source_title": "苯酐 East China ≥99% (grade method not stated)"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_avg": 9850,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "verified",
-   "source": "GuideChem",
-   "source_url": "https://www.guidechem.com/price/en/85-44-9.html",
-   "source_title": "苯酐 East China ≥99% (grade method not stated)"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_low": 9750,
-   "price_high": 9900,
-   "price_avg": 9825,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "verified",
-   "source": "Mysteel hot page (隆众 daily review)",
-   "source_url": "https://m.mysteel.com/hot/1602572.html",
-   "source_title": "邻苯法苯酐 江苏 市场价 自提"
-  },
-  {
-   "material": "phthalic-anhydride",
-   "market": "China",
-   "price_low": 9500,
-   "price_high": 9700,
-   "price_avg": 9600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "verified",
-   "source": "Mysteel hot page (隆众 daily review)",
-   "source_url": "https://m.mysteel.com/hot/1602572.html",
-   "source_title": "邻苯法苯酐 江苏 市场价 自提"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 10850,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-19",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "BPA East China (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 10800,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-20",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "BPA East China (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 10750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-21",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "BPA East China (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 11100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-26",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "BPA East China (Mysteel epoxy flash)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 11250,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-27",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "BPA East China (Mysteel epoxy flash)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 11600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-02",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601293.html",
-   "source_title": "BPA East China (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 11000,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-10",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602499.html",
-   "source_title": "BPA East China (Mysteel BPA daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 10900,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-11",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602499.html",
-   "source_title": "BPA East China, premium granular (Mysteel BPA daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 10750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "verified",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "BPA East China (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_avg": 10750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "verified",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602499.html",
-   "source_title": "BPA East China (Mysteel BPA daily review)"
-  },
-  {
-   "material": "bpa",
-   "market": "China · East China",
-   "price_low": 10700,
-   "price_high": 10800,
-   "price_avg": 10750,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "verified",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1592961.html",
-   "source_title": "BPA East China (Mysteel BPA daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11150,
-   "price_high": 11250,
-   "price_avg": 11200,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-27",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602813.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel flash)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11450,
-   "price_high": 11550,
-   "price_avg": 11500,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-07",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602813.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel flash)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11500,
-   "price_high": 11600,
-   "price_avg": 11550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-09",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602814.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11500,
-   "price_high": 11600,
-   "price_avg": 11550,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-10",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602814.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel flash)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11400,
-   "price_high": 11500,
-   "price_avg": 11450,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-17",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602813.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel flash)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11150,
-   "price_high": 11250,
-   "price_avg": 11200,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-14",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601471.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11200,
-   "price_high": 11300,
-   "price_avg": 11250,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-15",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601471.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11200,
-   "price_high": 11300,
-   "price_avg": 11250,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-20",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601471.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11125,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-23",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "ECH East China (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11050,
-   "price_high": 11100,
-   "price_avg": 11075,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-27",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602815.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11150,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-30",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601293.html",
-   "source_title": "ECH Jiangsu (East China) (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11200,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-02",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601293.html",
-   "source_title": "ECH Jiangsu (East China) (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11325,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-03",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601293.html",
-   "source_title": "ECH Jiangsu (East China) (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 11200,
-   "price_high": 11300,
-   "price_avg": 11250,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-12",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602815.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "ECH Jiangsu (East China) (Mysteel epoxy daily review)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_avg": 11000,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "verified",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602815.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "ech",
-   "market": "China · East China",
-   "price_low": 10900,
-   "price_high": 11000,
-   "price_avg": 10950,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "verified",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1602815.html",
-   "source_title": "ECH Jiangsu (East China) delivered, acceptance (Mysteel)"
-  },
-  {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_avg": 15200,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-23",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1630286.html",
-   "source_title": "E-51 liquid, Jiangsu (Changshu) producer ex-works offer (Mysteel flash)"
-  },
-  {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_low": 15400,
-   "price_high": 15800,
-   "price_avg": 15600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-05",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601293.html",
-   "source_title": "E-51 liquid, East China ex-works, close 11-05 (Mysteel weekly review)"
-  },
-  {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_low": 15300,
-   "price_high": 15400,
-   "price_avg": 15350,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-10",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "E-51 liquid, East China ex-works (Mysteel daily review)"
-  },
-  {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_low": 15200,
-   "price_high": 15400,
-   "price_avg": 15300,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-11",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "E-51 liquid, East China (Mysteel daily review)"
-  },
-  {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_low": 15000,
-   "price_high": 15300,
-   "price_avg": 15150,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-13",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "E-51 liquid, East China ex-works (Mysteel daily review)"
-  },
-  {
-   "material": "epoxy-resin",
-   "market": "China · E-51 liquid",
-   "price_low": 15000,
-   "price_high": 15200,
-   "price_avg": 15100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-17",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
-   "source_title": "E-51 liquid, East China (Mysteel daily review)"
-  },
-  {
-   "material": "epoxy-solid",
-   "market": "China · E-20 solid resin",
-   "price_avg": 15200,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-22",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1630286.html",
-   "source_title": "E-20 solid, Huangshan producer offer, East China delivered (Mysteel flash)"
-  },
-  {
-   "material": "epoxy-solid",
-   "market": "China · E-20 solid resin",
-   "price_avg": 15600,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-18",
-   "confidence": "indicative",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601293.html",
-   "source_title": "E-20 solid, Hunan producer ex-works offer (Mysteel flash)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_avg": 16150,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-31",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104093594-smm-analysis-titanium-dioxide-output-rises-slightly-in-august-prices-and-demand-decline",
-   "source_title": "Chloride-process TiO2 daily average as of 08-31 (SMM analysis)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 15300,
-   "price_high": 17000,
-   "price_avg": 16150,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-01",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104091692-high-inventory-and-low-demand-weigh-on-market-titanium-dioxide-market-in-weak-stalemate-smm-titanium-spot-express",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot express)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 15300,
-   "price_high": 17000,
-   "price_avg": 16150,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-07",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104101594-inventory-pressure-weakens-demand-titanium-dioxide-price-changes-limited-smm-titanium-spot-report",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot report)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 15300,
-   "price_high": 16800,
-   "price_avg": 16050,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-23",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104131633-tug-of-war-between-sellers-and-buyers-continues-titanium-dioxide-market-operates-steadily-smm-titanium-spot-express",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot express)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 15300,
-   "price_high": 16800,
-   "price_avg": 16050,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-28",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104137123-holiday-purchases-fall-short-of-expectations-titanium-market-remains-stable-smm-titanium-spot-report",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot report)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_avg": 16050,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-30",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104142695-september-peak-season-falls-short-of-expectations-titanium-industry-chain-runs-weak-with-divergence-smm-analysis",
-   "source_title": "Chloride-process TiO2 quote (SMM analysis)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 15300,
-   "price_high": 16800,
-   "price_avg": 16050,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-13",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104155195-titanium-market-lacks-clear-rebound-support-in-the-short-term-and-the-market-may-remain-stable-going-forward-smm-titanium-spot-report",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot report)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 15300,
-   "price_high": 16800,
-   "price_avg": 16050,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-27",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104181717-supply-demand-imbalance-drags-down-titanium-market-divergent-trends-confirm-market-strategies-smm-titanium-spot-report",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot report)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 14000,
-   "price_high": 16800,
-   "price_avg": 15400,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-09",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/DTAAPVLR4GWO66V3B3T5R36DJIYNQV2ZLYXMXXA-multiple-bearish-factors-overlap-titanium-market-weakness-continues-smm-titanium-spot-cargo-flash-report",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot flash)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · chloride process",
-   "price_low": 13400,
-   "price_high": 16800,
-   "price_avg": 15100,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
-   "source_title": "Chloride-process TiO2 mainstream (SMM spot report)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-08-31",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104093594-smm-analysis-titanium-dioxide-output-rises-slightly-in-august-prices-and-demand-decline",
-   "source_title": "Rutile TiO2 average as of 08-31 (SMM rutile series, sulphate route)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 12500,
-   "price_high": 14800,
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-01",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104091692-high-inventory-and-low-demand-weigh-on-market-titanium-dioxide-market-in-weak-stalemate-smm-titanium-spot-express",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 13650"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 12500,
-   "price_high": 14800,
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-07",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104101594-inventory-pressure-weakens-demand-titanium-dioxide-price-changes-limited-smm-titanium-spot-report",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 13650"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 12500,
-   "price_high": 14800,
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-23",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104131633-tug-of-war-between-sellers-and-buyers-continues-titanium-dioxide-market-operates-steadily-smm-titanium-spot-express",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 13650"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 12500,
-   "price_high": 14800,
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-28",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104137123-holiday-purchases-fall-short-of-expectations-titanium-market-remains-stable-smm-titanium-spot-report",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 13650"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-09-30",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104142695-september-peak-season-falls-short-of-expectations-titanium-industry-chain-runs-weak-with-divergence-smm-analysis",
-   "source_title": "Rutile TiO2 average (SMM rutile series, sulphate route)"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 12500,
-   "price_high": 14800,
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-13",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104155195-titanium-market-lacks-clear-rebound-support-in-the-short-term-and-the-market-may-remain-stable-going-forward-smm-titanium-spot-report",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 13650"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 12500,
-   "price_high": 14800,
-   "price_avg": 13650,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-10-27",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/104181717-supply-demand-imbalance-drags-down-titanium-market-divergent-trends-confirm-market-strategies-smm-titanium-spot-report",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 13650"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 11800,
-   "price_high": 14000,
-   "price_avg": 12900,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-09",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/DTAAPVLR4GWO66V3B3T5R36DJIYNQV2ZLYXMXXA-multiple-bearish-factors-overlap-titanium-market-weakness-continues-smm-titanium-spot-cargo-flash-report",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 12900"
-  },
-  {
-   "material": "tio2",
-   "market": "China · rutile, sulphate",
-   "price_low": 11700,
-   "price_high": 14000,
-   "price_avg": 12850,
-   "currency": "CNY",
-   "unit": "t",
-   "incl_vat": true,
-   "incoterm": null,
-   "observed_on": "2026-11-16",
-   "confidence": "indicative",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
-   "source_title": "Rutile TiO2 (SMM rutile series, sulphate route) avg 12850"
+   "price_high": 16800
   }
  ],
  "drivers": [
   {
    "code": "BRENT",
-   "contract": "front month, settlement (USD/bbl)",
+   "contract": "Jan-27 (F7)",
    "value": 91.95,
    "observed_on": "2026-11-18",
-   "source": "Euronext / Dow Jones news",
-   "source_url": "https://live.euronext.com/en/financial-news/oil-prices-settle-lower-traders-weigh-surplus-supply-outlook"
-  },
-  {
-   "code": "BRENT",
-   "contract": "Jan-27 (F7), settlement (USD/bbl)",
-   "value": 92.44,
-   "observed_on": "2026-11-16",
-   "source": "Newsquawk",
-   "source_url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-284-lower-at-8572bbl-brent-f7-settles-usd-340-lower-at-9244bbl"
+   "source": "FinanceFeeds (Reuters via Euronext)",
+   "source_url": "https://financefeeds.com/brent-crude-oil-price-92-12-thursday-eia-build-hormuz-mines-bull-96-bear-88/"
   },
   {
    "code": "PALM_OIL",
-   "contract": "Bursa FCPO Feb-2027 (3rd month), close MYR/t",
+   "contract": "FCPO Feb-27 (3rd month)",
    "value": 4547,
    "observed_on": "2026-11-16",
    "source": "Bernama",
@@ -2061,8 +301,8 @@
   },
   {
    "code": "TI_CONC",
-   "contract": "domestic TiO2>=47%, weekly avg",
-   "value": 1125,
+   "contract": "domestic TiO2≥46%, avg",
+   "value": 1075,
    "observed_on": "2026-11-06",
    "source": "SMM",
    "source_url": "https://news.metal.com/newscontent/104209690-off-season-suppresses-demand-titanium-market-consolidates-at-lows-with-little-chance-of-rising-in-the-short-term-smm-titanium-weekly-review"
@@ -2071,204 +311,183 @@
  "fx": [
   {
    "pair": "USDCNY",
-   "rate": 6.7128,
-   "observed_on": "2026-11-19",
-   "source_url": "https://www.chinanews.com.cn/cj/2026/11-19/10734499.shtml"
+   "rate": 6.7132,
+   "observed_on": "2026-11-17",
+   "source_url": "https://www.xinhuanet.com/20261117/f4897af0567e4f69b6f2ec5253e1a749/c.html"
+  },
+  {
+   "pair": "USDCNY",
+   "rate": 6.7141,
+   "observed_on": "2026-11-16",
+   "source_url": "https://www.news.cn/20261116/52e2a21498fd477f9d032e1c54778272/c.html"
   }
  ],
  "events": [
   {
-   "material": null,
-   "event_type": "geopolitics",
-   "title": "Brent settles at $91.95 on US stock build while Hormuz attacks continue",
-   "summary": "Brent fell $1.19 to $91.95 on 18 Nov after EIA crude stocks rose 3.4 mb; attacks on Hormuz shipping, US-Iran strikes and Houthi drone strikes on Saudi East-West pipeline limited losses. Both benchmarks on track for ~20% monthly declines.",
-   "company": null,
-   "direction": "down",
-   "impact": "medium",
-   "event_date": "2026-11-18",
-   "source": "Euronext / Dow Jones news",
-   "source_url": "https://live.euronext.com/en/financial-news/oil-prices-settle-lower-traders-weigh-surplus-supply-outlook",
-   "is_alert": false
-  },
-  {
-   "material": "styrene",
-   "event_type": "demand",
-   "title": "China chemical futures sell off: styrene -2%, benzene, propylene, PX over -3%",
-   "summary": "Domestic commodity futures closed mostly lower on 18 Nov; styrene fell more than 2% and pure benzene, propylene and PX more than 3%, signalling weaker aromatics and acrylic feedstock costs.",
-   "company": null,
-   "direction": "down",
-   "impact": "medium",
-   "event_date": "2026-11-18",
-   "source": "STNN",
-   "source_url": "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html",
-   "is_alert": false
-  },
-  {
-   "material": "styrene",
-   "event_type": "capacity",
-   "title": "Shandong 200 kt/y PO/SM unit restarted feed",
-   "summary": "A 200 kt/y PO/SM styrene unit in Dongming, Shandong restarted feedstock on 10 Nov and is expected to produce on-spec product soon, adding supply as styrene futures weaken.",
-   "company": null,
-   "direction": "down",
-   "impact": "low",
-   "event_date": "2026-11-10",
-   "source": "Sina Finance",
-   "source_url": "https://k.sina.cn/article_5953190046_162d6789e06703xow0.html",
-   "is_alert": false
-  },
-  {
-   "material": "white-spirit",
-   "event_type": "demand",
-   "title": "Shandong solvent oil weak on bearish fundamentals",
-   "summary": "Mysteel's 18 Nov solvent-oil review (headline 'fundamentals remain bearish, solvent oil weak') put Shandong national-standard solvent oil at 8,200-8,300 CNY/t and naphtha trades at 8,393 (-135).",
-   "company": null,
-   "direction": "down",
-   "impact": "low",
-   "event_date": "2026-11-18",
-   "source": "Mysteel (m.mysteel.com)",
-   "source_url": "https://m.mysteel.com/hot/1601773.html",
-   "is_alert": false
-  },
-  {
-   "material": "tio2",
-   "event_type": "demand",
-   "title": "China TiO2 prices held at lows as high operating rates meet off-season",
-   "summary": "SMM (18 Nov) reports chloride-process TiO2 at 13,400–16,800 CNY/t and rutile at 11,700–14,000 CNY/t, with high operating rates, weak off-season demand and further softening in titanium concentrate; SMM expects prices to stay under pressure.",
-   "company": null,
-   "direction": "down",
-   "impact": "medium",
-   "event_date": "2026-11-18",
-   "source": "SMM",
-   "source_url": "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report",
-   "is_alert": false
-  },
-  {
    "material": "epoxy-resin",
    "event_type": "demand",
-   "title": "East China liquid epoxy E-51 slips 100 CNY/t",
-   "summary": "Mysteel quotes East China liquid E-51 at 14,900–15,100 CNY/t ex-works on 18 Nov, down 100 CNY/t day on day.",
-   "company": null,
+   "title": "E-51 market price slips another 100 CNY/t to 14,900",
+   "summary": "Mysteel's E-51 market price fell 100 to 14,900 CNY/t on 19 Nov; producer offers (Dalian Qihua 15,500 ex-works) stay above market as buyers hold back.",
    "direction": "down",
-   "impact": "low",
-   "event_date": "2026-11-18",
+   "impact": "medium",
+   "event_date": "2026-11-19",
    "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1601520.html",
+   "source_url": "https://m.mysteel.com/hot/1630286.html",
    "is_alert": false
   },
   {
-   "material": "butyl-acetate",
+   "material": "epoxy-solid",
+   "event_type": "price_announcement",
+   "title": "Huangshan solid epoxy (E-12) producers cut offers by 100-500 CNY/t",
+   "summary": "Huangshan Tianma lowered E-12 to 14,900 (-100) and Shexian Yongli to 14,800 delivered (-500) on 19 Nov; E-12 is a different grade from E-20 but signals softer solid-resin pricing.",
+   "direction": "down",
+   "impact": "low",
+   "event_date": "2026-11-19",
+   "source": "Mysteel",
+   "source_url": "https://m.mysteel.com/hot/1601172.html",
+   "is_alert": false
+  },
+  {
+   "material": "xylene",
    "event_type": "demand",
-   "title": "East China butyl acetate falls 125 CNY/t",
-   "summary": "Mysteel reports East China n-butyl acetate down 125 CNY/t on 18 Nov to 7,350–7,500 CNY/t cash ex-works, following weaker feedstocks.",
-   "company": null,
+   "title": "Shandong xylene drops 200 CNY/t to 6,800",
+   "summary": "GuideChem's East China (Shandong isomer-grade) xylene quote fell to 6,800 CNY/t on 19 Nov from 7,000, the third decline this week.",
+   "direction": "down",
+   "impact": "medium",
+   "event_date": "2026-11-19",
+   "source": "GuideChem",
+   "source_url": "https://www.guidechem.com/price/en/1330-20-7.html",
+   "is_alert": false
+  },
+  {
+   "material": "butyl-acrylate",
+   "event_type": "demand",
+   "title": "East China butyl acrylate extends decline to 9,100",
+   "summary": "Longzhong daily reviews show East China BA down 9,250 → 9,200 → 9,100 CNY/t over 16-18 Nov on limited downstream buying.",
+   "direction": "down",
+   "impact": "medium",
+   "event_date": "2026-11-18",
+   "source": "Mysteel (Longzhong)",
+   "source_url": "https://m.mysteel.com/hot/1602706.html",
+   "is_alert": false
+  },
+  {
+   "material": "mma",
+   "event_type": "demand",
+   "title": "MMA keeps sliding in East China (12,300 on 18 Nov)",
+   "summary": "MMA日评: East China 12,600 (16 Nov) → 12,450 → 12,300 (18 Nov); demand is buying only as needed.",
    "direction": "down",
    "impact": "low",
    "event_date": "2026-11-18",
-   "source": "Mysteel",
-   "source_url": "https://m.mysteel.com/hot/1600858.html",
+   "source": "Mysteel (Longzhong)",
+   "source_url": "https://www.mysteel.com/hot/1592840.html",
+   "is_alert": false
+  },
+  {
+   "material": null,
+   "event_type": "geopolitics",
+   "title": "Brent near 2½-month low as surplus outweighs Iran/Hormuz risk",
+   "summary": "Brent settled at $91.95 on 18 Nov and traded around $92 on 19-20 Nov (CFD); Trading Economics reports a 2½-month low as ample supply counters Middle East risk.",
+   "direction": "down",
+   "impact": "medium",
+   "event_date": "2026-11-19",
+   "source": "Trading Economics",
+   "source_url": "https://tradingeconomics.com/commodity/brent-crude-oil",
    "is_alert": false
   }
  ],
  "analyses": [
   {
    "material": "tio2",
-   "summary": "AI interpretation: China chloride-process TiO2 remains at 13,400–16,800 CNY/t (mid 15,100) on 18 Nov, unchanged from earlier this week. High operating rates, off-season demand and softer titanium concentrate keep the market under pressure; near-term direction flat to slightly lower.",
+   "summary": "AI interpretation: No newer readable SMM print today; the latest weekly review (6 Nov) puts chloride-process TiO2 at 14,000-16,800 CNY/t and the 18 Nov spot report showed prices consolidating at lows. Titanium concentrate is flat at ~1,075 and the off-season continues, so prices should stay flat-to-soft into December.",
    "drivers": [
-    {
-     "name": "Operating rates",
-     "note": "High producer run rates and inventories",
-     "influence": "high"
-    },
     {
      "name": "Seasonal demand",
      "note": "Off-season coatings demand",
+     "influence": "high"
+    },
+    {
+     "name": "Operating rates",
+     "note": "High producer run rates keep supply ample",
      "influence": "medium"
     },
     {
      "name": "Titanium concentrate",
-     "note": "Upstream ore prices still weakening",
-     "influence": "medium"
+     "note": "Flat ~1,075 CNY/t",
+     "influence": "low"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Buy hand-to-mouth; no need to pre-buy ahead of December"
+     "action": "Buy hand-to-mouth; no pre-buying ahead of December"
     }
    ],
    "evidence": [
-    "https://news.metal.com/newscontent/KGVSVPXLNPLGHJNMHR45OED6BVQ4GJBJMRRJMTY-high-operating-rates-meet-off-season-prices-remain-under-pressure-and-consolidate-at-lows-smm-titanium-spot-report"
+    "https://news.metal.com/newscontent/104209690-off-season-suppresses-demand-titanium-market-consolidates-at-lows-with-little-chance-of-rising-in-the-short-term-smm-titanium-weekly-review"
    ]
   },
   {
    "material": "acrylic-emulsions",
-   "summary": "AI interpretation: Cost index components were stable on 18 Nov: East China butyl acrylate 10,800 and acrylic acid 9,400 CNY/t (unchanged three days), Shandong styrene 9,810 flat while Jiangsu spot held 10,150-10,250. Styrene futures fell over 2% and a Shandong PO/SM restart adds supply, so the styrene leg (45%) leans softer next week; 2-EHA was not refreshed.",
+   "summary": "AI interpretation: The emulsion cost index eased: Longzhong shows East China BA down to 9,100 CNY/t (18 Nov, -150 over three days) while Shandong styrene held 9,810. No new acrylic acid or 2-EHA prints were readable today, so those legs are unchanged; with crude near a 2½-month low the bias stays mildly lower.",
    "drivers": [
     {
-     "name": "Styrene",
-     "note": "Futures down >2% on 18 Nov; new PO/SM supply",
+     "name": "Butyl acrylate",
+     "note": "9,100 on 18 Nov, falling daily",
      "influence": "high"
     },
     {
-     "name": "Acrylates",
-     "note": "BA/AA producer quotes flat",
-     "influence": "medium"
+     "name": "Styrene",
+     "note": "Flat 9,810 (Shandong)",
+     "influence": "high"
     },
     {
-     "name": "Propylene",
-     "note": "Propylene futures down >3%",
+     "name": "Crude",
+     "note": "Brent ~$92, near 2½-month low",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Hold styrene-acrylic emulsion orders short; expect softer offers late November."
+     "action": "Keep styrene-acrylic emulsion orders short; push for lower late-November offers"
     }
    ],
    "evidence": [
+    "https://m.mysteel.com/hot/1602706.html",
     "https://www.guidechem.com/price/en/100-42-5.html",
-    "https://m.mysteel.com/hot/1601111.html",
-    "https://m.mysteel.com/hot/1602700.html",
-    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html",
-    "https://k.sina.cn/article_5953190046_162d6789e06703xow0.html"
+    "https://financefeeds.com/brent-crude-oil-price-92-12-thursday-eia-build-hormuz-mines-bull-96-bear-88/"
    ]
   },
   {
    "material": "pure-acrylic",
-   "summary": "AI interpretation: Pure-acrylic cost index was flat: BA 10,800 and AA 9,400 CNY/t (18 Nov), MMA 99.9% 9,500 (17 Nov). Falling propylene futures cap upside for acrylates near term.",
+   "summary": "AI interpretation: Both main components fell: BA 9,100 (18 Nov) and Longzhong MMA East China 12,300 (from 12,600 on 16 Nov). Demand is need-based, so the pure-acrylic cost index should drift lower near term.",
    "drivers": [
     {
-     "name": "Butyl acrylate",
-     "note": "Flat producer quotes",
-     "influence": "high"
-    },
-    {
      "name": "MMA",
-     "note": "Itemized 99.9% quote unchanged",
+     "note": "12,300, -300 in three days",
      "influence": "high"
     },
     {
-     "name": "Propylene",
-     "note": "Futures down >3%",
-     "influence": "medium"
+     "name": "Butyl acrylate",
+     "note": "9,100, -150 in three days",
+     "influence": "high"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "No urgency; keep normal cover."
+     "action": "Ask emulsion suppliers to reflect the BA/MMA decline on next quotes"
     }
    ],
    "evidence": [
-    "https://m.mysteel.com/hot/1602700.html",
-    "https://www.guidechem.com/price/en/80-62-6.html",
-    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+    "https://www.mysteel.com/hot/1592840.html",
+    "https://m.mysteel.com/hot/1602706.html"
    ]
   },
   {
    "material": "epoxy-resin",
-   "summary": "AI interpretation: Mysteel put East China E-51 at 14,900-15,100 CNY/t on 18 Nov, down 100 on the day and about 300 below early November. BPA (~10,620-10,750) and ECH (~10,950-11,000) are steady, so the drift lower reflects weak demand rather than cost; expect sideways-to-soft prices next week.",
+   "summary": "AI interpretation: Mysteel's E-51 market price fell another 100 to 14,900 CNY/t on 19 Nov, while producer list offers remain 15,350-15,700. BPA (10,750, East China) and ECH (10,900-11,000, Jiangsu) were stable on 18 Nov, so the decline is demand-driven; expect gradual further easing.",
    "drivers": [
     {
      "name": "Demand",
@@ -2277,269 +496,256 @@
     },
     {
      "name": "BPA",
-     "note": "Flat at ~10,600-10,750",
+     "note": "Stable 10,750",
      "influence": "medium"
     },
     {
      "name": "ECH",
-     "note": "Flat around 11,000 (two sources agree)",
+     "note": "Stable ~10,950",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Negotiate small cuts; avoid forward buying beyond 2-3 weeks."
+     "action": "Negotiate small cuts; avoid forward cover beyond 2-3 weeks"
     }
    ],
    "evidence": [
-    "https://m.mysteel.com/hot/1601520.html",
-    "https://www.guidechem.com/price/en/80-05-7.html",
-    "https://www.guidechem.com/price/en/106-89-8.html"
+    "https://m.mysteel.com/hot/1630286.html",
+    "https://m.mysteel.com/hot/1601172.html",
+    "https://m.mysteel.com/hot/1592961.html",
+    "https://m.mysteel.com/hot/1601471.html"
    ]
   },
   {
    "material": "epoxy-solid",
-   "summary": "AI interpretation: No dated E-20 print found; the app estimates E-20 from E-51 (15,000 on 18 Nov, so model ~14,800). Mysteel's Huangshan E-12 (a different grade) eased to 14,400-14,600, consistent with a softer solid-resin market.",
+   "summary": "AI interpretation: No dated E-20 print found today; the app estimates E-20 from E-51 (14,900 on 19 Nov). Huangshan E-12 producers cut offers by 100-500 CNY/t on 19 Nov, consistent with softer solid-resin pricing.",
    "drivers": [
     {
      "name": "E-51",
-     "note": "Liquid resin down 100 on 18 Nov",
+     "note": "14,900, -100",
      "influence": "high"
     },
     {
-     "name": "Demand",
-     "note": "Powder-coating off-season",
+     "name": "Solid-resin offers",
+     "note": "E-12 cuts in Huangshan",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Ask suppliers to pass through the E-51 decline."
+     "action": "Ask solid-resin suppliers to pass through the E-51 decline"
     }
    ],
    "evidence": [
-    "https://m.mysteel.com/hot/1601520.html"
+    "https://m.mysteel.com/hot/1630286.html",
+    "https://m.mysteel.com/hot/1601172.html"
    ]
   },
   {
    "material": "acrylic-polyol",
-   "summary": "AI interpretation: Components: xylene 7,000 CNY/t (-33, 18 Nov), MMA 9,500, BA 10,800, HEMA 97% 14,300 and styrene 9,810 all flat. The index is marginally lower on xylene; weaker futures for styrene and PX point to slight further easing.",
+   "summary": "AI interpretation: The polyol index fell on its biggest leg: xylene dropped to 6,800 CNY/t (19 Nov, -200), MMA to 12,300 and BA to 9,100, while styrene held 9,810 and HEMA had no new print. Further mild easing is likely while crude stays weak.",
    "drivers": [
     {
      "name": "Xylene",
-     "note": "East China down 33 to 7,000",
+     "note": "6,800, -200 on 19 Nov",
      "influence": "high"
     },
     {
-     "name": "Styrene",
-     "note": "Futures down >2%",
+     "name": "MMA",
+     "note": "12,300, falling",
      "influence": "medium"
     },
     {
-     "name": "Acrylates",
-     "note": "BA/MMA/HEMA flat",
+     "name": "Butyl acrylate",
+     "note": "9,100, falling",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Keep cover short; next re-quote in two weeks."
+     "action": "Keep cover short; re-quote polyol in two weeks"
     }
    ],
    "evidence": [
     "https://www.guidechem.com/price/en/1330-20-7.html",
-    "https://www.guidechem.com/price/en/80-62-6.html",
-    "https://www.guidechem.com/price/en/868-77-9.html",
-    "https://m.mysteel.com/hot/1602700.html",
-    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+    "https://www.mysteel.com/hot/1592840.html",
+    "https://m.mysteel.com/hot/1602706.html",
+    "https://www.guidechem.com/price/en/100-42-5.html"
    ]
   },
   {
    "material": "alkyd-resins",
-   "summary": "AI interpretation: Jiangsu first-grade soybean oil fell to 8,840 CNY/t on 18 Nov (8,890 on 17 Nov, 9,010 on 16 Nov), PA held 9,800 and no dated 200# white-spirit print was readable today. Lower soybean oil (48% weight) pulls the index down; palm oil on Bursa was also soft.",
+   "summary": "AI interpretation: PA eased to 9,667 CNY/t (East China, 19 Nov) from 9,783, confirmed by Mysteel's 9,600 on 18 Nov. No newer readable soybean-oil spot today (last 8,840 on 18 Nov), so the index is marginally lower on PA.",
    "drivers": [
     {
-     "name": "Soybean oil",
-     "note": "Down ~170 CNY/t over three sessions",
-     "influence": "high"
-    },
-    {
      "name": "Phthalic anhydride",
-     "note": "Flat at 9,800",
+     "note": "9,667, -116",
      "influence": "medium"
     },
     {
-     "name": "Solvent oil",
-     "note": "Shandong solvent oil weak",
+     "name": "Soybean oil",
+     "note": "No new print; last 8,840",
+     "influence": "high"
+    },
+    {
+     "name": "Palm oil",
+     "note": "FCPO Feb 4,547 (16 Nov)",
      "influence": "low"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Delay alkyd buys a week to capture softer oil costs."
+     "action": "Delay alkyd buys a week to capture softer PA"
     }
    ],
    "evidence": [
-    "https://m.mysteel.com/zta/douyou/",
     "https://www.guidechem.com/price/en/85-44-9.html",
-    "https://bernama.com/en/market/news.php?id=2635317",
-    "https://m.mysteel.com/hot/1601773.html"
+    "https://bernama.com/en/market/news.php?id=2635317"
    ]
   },
   {
    "material": "pu-hardener",
-   "summary": "AI interpretation: No dated HDI biuret print and no readable HDI monomer page today (Mysteel curing-agent page unavailable to this run), so the model cannot be refreshed on HDI. Solvent legs eased: xylene 7,000 and butyl acetate 7,750 (domestic, 18 Nov). Near-term direction for the biuret model is flat.",
+   "summary": "AI interpretation: No dated HDI biuret or HDI monomer price was readable today (Mysteel curing-agent page and GuideChem HDI page could not be opened), so the model cannot be refreshed on HDI. Solvent legs eased: xylene 6,800 and butyl acetate ~7,550-7,700.",
    "drivers": [
     {
      "name": "HDI monomer",
-     "note": "Not refreshed today",
+     "note": "Not available today",
      "influence": "high"
     },
     {
      "name": "Solvents",
-     "note": "Xylene and butyl acetate slightly lower",
+     "note": "Xylene and butyl acetate softer",
      "influence": "low"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Keep current HDI-biuret contracts; re-check HDI monomer tomorrow."
+     "action": "Hold current HDI-biuret contracts; re-check HDI monomer next run"
     }
    ],
    "evidence": [
     "https://www.guidechem.com/price/en/1330-20-7.html",
-    "https://www.guidechem.com/price/en/123-86-4.html"
+    "https://m.chemicalbook.com/priceindex_cb6671615.htm"
    ]
   },
   {
    "material": "xylene",
-   "summary": "AI interpretation: East China (Shandong) mixed xylene slipped to 7,000 CNY/t on 18 Nov from 7,050 on 16 Nov. PX futures fell over 3% and Brent dropped to $91.95, so the near-term bias is mildly lower.",
+   "summary": "AI interpretation: Shandong isomer-grade xylene fell to 6,800 CNY/t on 19 Nov (7,033 on 17 Nov, 7,000 on 18 Nov). Brent near a 2½-month low and weak aromatics futures point to further small declines.",
    "drivers": [
     {
      "name": "Crude",
-     "note": "Brent -1.3% to $91.95",
+     "note": "Brent $91.95 settle 18 Nov",
      "influence": "high"
     },
     {
-     "name": "PX",
-     "note": "Futures down >3%",
-     "influence": "medium"
-    },
-    {
-     "name": "Supply",
-     "note": "Ample domestic supply",
+     "name": "Aromatics futures",
+     "note": "PX weak this week",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Buy only prompt needs; expect further small declines."
+     "action": "Buy prompt needs only; expect lower levels next week"
     }
    ],
    "evidence": [
     "https://www.guidechem.com/price/en/1330-20-7.html",
-    "https://live.euronext.com/en/financial-news/oil-prices-settle-lower-traders-weigh-surplus-supply-outlook",
-    "https://m.stnn.cc/detail/6afd4e588f9d2b19dd9a4e99.html"
+    "https://financefeeds.com/brent-crude-oil-price-92-12-thursday-eia-build-hormuz-mines-bull-96-bear-88/",
+    "https://tradingeconomics.com/commodity/brent-crude-oil"
    ]
   },
   {
    "material": "butyl-acetate",
-   "summary": "AI interpretation: East China n-butyl acetate fell 125 CNY/t to 7,350–7,500 CNY/t ex-works on 18 Nov (Mysteel), versus 7,700 in ChemicalBook's 17 Nov Jiangsu index. Inventories are building and feedstock acetic acid is weak (3,840), so further mild declines are likely.",
+   "summary": "AI interpretation: ChemicalBook's Jiangsu index was 7,700 CNY/t on 18 Nov while Mysteel's East China ex-works range was 7,450-7,650 on 17 Nov (-50). Acetic acid is flat at 3,550 in Jiangsu, so cost support is weak and prices should drift sideways-to-lower.",
    "drivers": [
     {
      "name": "Acetic acid",
-     "note": "East China 3,840, flat-to-weak",
+     "note": "Flat 3,550",
      "influence": "medium"
     },
     {
      "name": "Inventory",
-     "note": "Building in East China",
-     "influence": "high"
+     "note": "Ample supply",
+     "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Buy only immediate needs; expect lower levels next week"
+     "action": "Buy immediate needs only"
     }
    ],
    "evidence": [
-    "https://m.mysteel.com/hot/1600858.html",
     "https://m.chemicalbook.com/priceindex_cb6671615.htm",
-    "https://www.guidechem.com/price/en/64-19-7.html"
+    "https://m.mysteel.com/hot/1600847.html"
    ]
   },
   {
    "material": "solvent-naphtha",
-   "summary": "AI interpretation: No dated S-100# print found; the app estimates it from xylene (7,000 on 18 Nov, model ~7,000). Lower xylene and crude imply a slightly softer S-100# level.",
+   "summary": "AI interpretation: No dated S-100# print found; the app estimates it from xylene (6,800 on 19 Nov). Lower xylene and crude imply a slightly softer S-100# level.",
    "drivers": [
     {
      "name": "Xylene",
-     "note": "Down 33 to 7,000",
+     "note": "6,800, -200",
      "influence": "high"
     },
     {
      "name": "Crude",
-     "note": "Brent lower",
+     "note": "Brent ~$92",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Use xylene trend to challenge S-100 offers."
+     "action": "Use the xylene decline to challenge S-100# offers"
     }
    ],
    "evidence": [
     "https://www.guidechem.com/price/en/1330-20-7.html",
-    "https://live.euronext.com/en/financial-news/oil-prices-settle-lower-traders-weigh-surplus-supply-outlook"
+    "https://financefeeds.com/brent-crude-oil-price-92-12-thursday-eia-build-hormuz-mines-bull-96-bear-88/"
    ]
   },
   {
    "material": "white-spirit",
-   "summary": "AI interpretation: No readable 200# white-spirit print today. Mysteel reports Shandong solvent oil weak on bearish fundamentals (national-standard grade 8,200-8,300) and naphtha down 135, so the bias for 200# is lower.",
+   "summary": "AI interpretation: No readable 200# white-spirit print today (last 5,700 on 18 Nov, ChemicalBook). With crude near a 2½-month low the bias for 200# stays lower.",
    "drivers": [
     {
-     "name": "Naphtha",
-     "note": "Shandong naphtha -135",
-     "influence": "medium"
-    },
-    {
      "name": "Crude",
-     "note": "Brent lower",
+     "note": "Brent near 2½-month low",
      "influence": "medium"
     }
    ],
    "actions": [
     {
      "department": "Procurement",
-     "action": "Seek lower offers on next white-spirit lot."
+     "action": "Seek lower offers on the next white-spirit lot"
     }
    ],
    "evidence": [
-    "https://m.mysteel.com/hot/1601773.html",
-    "https://live.euronext.com/en/financial-news/oil-prices-settle-lower-traders-weigh-surplus-supply-outlook"
+    "https://tradingeconomics.com/commodity/brent-crude-oil"
    ]
   },
   {
    "material": "calcium-carbonate",
-   "summary": "AI interpretation: No price series; no new events found today. Market assumed stable.",
+   "summary": "AI interpretation: No price series and no new events found today; market assumed stable.",
    "drivers": [
     {
      "name": "Energy",
-     "note": "Lower oil eases freight and kiln costs slightly",
+     "note": "Crude and power costs steady-to-lower",
      "influence": "low"
     }
    ],
    "actions": [],
    "evidence": [
-    "https://live.euronext.com/en/financial-news/oil-prices-settle-lower-traders-weigh-surplus-supply-outlook"
+    "https://tradingeconomics.com/commodity/brent-crude-oil"
    ]
   }
  ],
